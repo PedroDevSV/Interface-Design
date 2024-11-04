@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        header, footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        aside{
+            background-color: #FFCCCC;
+            margin: 1px 0 2px 1px;
+        }
+        main{margin: 1px 0 2px 1px; text-align: center;}
+        .bloque1{background-color: #00CC99; border: 1px solid white;}
+        .bloque2{background-color: #669999; border: 1px solid white;}
+        .bloque3{background-color: #99CCFF; border: 1px solid white;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col">Cabecera</div>
+        </header>
+        <section class="row">
+            <!-- main -->
+             <main class="col order-2">
+                <div class="row">
+                    <div class="bloque1 col-12">A</div>
+                    <div class="bloque2 col-12 col-md-6">B</div>
+                    <div class="bloque2 col-12 col-md-6">C</div>
+                    <div class="w-100"></div>
+                    <div class="bloque3 col-6">D</div>
+                    <div class="bloque3 col-6">E</div>
+                    <div class="bloque3 col-6">F</div>
+                    <div class="bloque3 col-6">G</div>
+                    <div class="bloque3 col-6">H</div>
+                    <div class="bloque3 col-6">I</div>
+                    <div class="bloque3 col-6">J</div>
+                    <div class="bloque3 col-6">K</div>
+                    <div class="bloque3 col-6">L</div>
+                    <div class="bloque3 col-6">M</div>
+                </div>
+             </main>
+             <aside class="col-12 col-sm-3 col-md-4">Barra lateral</aside>
+        </section>
+        <footer>Pie</footer>
+    </div>
+</body>
+</html>
