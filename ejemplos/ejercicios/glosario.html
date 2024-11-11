@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario de Bootstrap 5</title>
+     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Glosario de Bootstrap 5</h1>
+        
+        <section>
+            <h2>Filas y Columnas</h2>
+            <p>Bootstrap 5 utiliza un sistema de rejilla (grid system) basado en filas (<code>.row</code>) y columnas (<code>.col</code>).</p>
+            
+            <h3>Filas</h3>
+            <div class="row">
+                <div class="col-12">
+                    <p><code>.row</code>: Contenedor de fila que agrupa columnas.</p>
+                </div>
+            </div>
+
+            <h3>Columnas</h3>
+            <div class="row">
+                <div class="col-6">
+                    <p><code>.col-6</code>: Columna que ocupa 6 partes del total de 12.</p>
+                </div>
+                <div class="col-6">
+                    <p><code>.col-6</code>: Otra columna que ocupa 6 partes del total de 12.</p>
+                </div>
+            </div>
+            
+            <h3>Ejemplo de Rejilla</h3>
+            <div class="row">
+                <div class="col-4">
+                    <div class="p-3 bg-primary text-white">.col-4</div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 bg-secondary text-white">.col-4</div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 bg-success text-white">.col-4</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>Tamaños de Pantalla</h2>
+            <p>Bootstrap 5 permite definir tamaños de columna para diferentes tamaños de pantalla usando clases específicas.</p>
+
+            <h3>Tamaños de Pantalla</h3>
+            <ul>
+                <li><code>.col-sm-</code>: Pequeño (≥576px)</li>
+                <li><code>.col-md-</code>: Mediano (≥768px)</li>
+                <li><code>.col-lg-</code>: Grande (≥992px)</li>
+                <li><code>.col-xl-</code>: Extra Grande (≥1200px)</li>
+                <li><code>.col-xxl-</code>: Extra Extra Grande (≥1400px)</li>
+            </ul>
+
+            <h3>Ejemplo de Tamaños de Columna</h3>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="p-3 bg-info text-white">.col-sm-6 .col-md-4 .col-lg-3 .col-xl-2 .col-xxl-1</div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="p-3 bg-warning text-white">.col-sm-6 .col-md-4 .col-lg-3 .col-xl-2 .col-xxl-1</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>Offset (Desplazamiento de Columnas)</h2>
+            <p>Bootstrap permite desplazar columnas a la derecha usando clases de <code>offset</code>.</p>
+
+            <h3>Ejemplo de Offset</h3>
+            <div class="row">
+                <div class="col-4 offset-2">
+                    <div class="p-3 bg-danger text-white">.col-4 .offset-2</div>
+                </div>
+                <div class="col-4 offset-1">
+                    <div class="p-3 bg-dark text-white">.col-4 .offset-1</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>Espacio entre Columnas con Justify-Content</h2>
+            <p>Para dejar espacio entre columnas, se puede utilizar la clase <code>justify-content</code>.</p>
+
+            <h3>Ejemplo de Justify-Content</h3>
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <div class="p-3 bg-primary text-white">.col-4</div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 bg-secondary text-white">.col-4</div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 bg-success text-white">.col-4</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>Order (Orden de Columnas)</h2>
+            <p>La clase <code>order</code> permite cambiar el orden de las columnas.</p>
+
+            <h3>Ejemplo de Order</h3>
+            <div class="row">
+                <div class="col-4 order-3">
+                    <div class="p-3 bg-info text-white
