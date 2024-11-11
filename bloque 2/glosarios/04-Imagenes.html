@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        .columna{
+            background: grey;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid"> 
+       <div class="row">
+        <h2>Border y formas de imagen</h2>
+        <div class="col-12">
+            <img src="images/perro1.jpg" alt="perro 1" class="rounded">
+            <img src="images/perro2.jpg" alt="Labrador" class="rounded-circle">
+            <img src="images/perro3.jpg" alt="perro3" class="img-thumbnall">
+        </div>
+        <div class="w-100">-----------</div>
+        <h2>Posicion y justificar</h2>
+        <div class="col-12">
+            <img src="images/perro1.jpg" alt="" class="float-end">
+            <img src="images/perro2.jpg" alt="Labrador" class="float-start">
+            <img src="images/perro3.jpg" alt="perro3" class="mx-auto d-block">
+        </div>
+        <div class="w-100">-----------</div>
+        <h2>Imagenes responsive</h2>
+        <div class="col-12">
+            <p>La clase <code>.img-fluid</code> permite reescalar la imagen. Puedes comprobarlo con esta</p>
+            <img src="images/vegamedia.jpg" alt="vegamedia" class="img-fluid">
+        </div>
+        <div class="w-100">-----------</div>
+        <h2>Gutter o espacio entre columnas</h2>
+        <div class="col-12">
+            <p>Por defecot las imagenes tienen, interesa quitarlo, sobre todo el horizontal</p>
+            <p>Un ejemplo metiendo imagen en div</p>
+        </div>
+        <div class="row">
+            <div class="columna col-4">
+                <img src="images/perro1.jpg" alt="perro" class="img-fluid">
+            </div>
+        </div>
+        <div class="w-100">Sin gutters</div>
+        <div class="row g-0">
+            <div class="columna col-4">
+                <img src="images/perro1.jpg" alt="perro" class="img-fluid">
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
