@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+		<script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+		<title>Document</title>
+        <style> 
+            body{background-color: rgb(224, 222, 219);}
+        </style>
+	</head>
+	<body>
+		<div class="container-fluid">
+            <br>
+			<div class="row">
+				<div class="col-12">
+                    <h2>Tipos de Botones</h2>
+					<button class="btn">Basic</button>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-link">Link</button>
+                    <button class="btn btn-dark">Dark</button>   
+                    <button class="btn btn-light">Light</button>
+				</div>
+			</div>
+
+            <!--  -->
+            <br>
+            <hr>
+            <h2>Objetos que pueden ser botones</h2>
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="btn btn-primary">Enlace</a>
+                    <!-- le das type -->
+                    <input type="button" class="btn btn-primary" value="Input">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    
+                </div>
+            </div>
+            <br>
+            <hr>
+            <h2>Botones sin fondo (outline)</h2>
+            <div class="row">
+				<div class="col-12">
+					<button class="btn">Basic</button>
+                    <button class="btn btn-outline-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Secondary</button>
+                    <button class="btn btn-outline-success">Success</button>
+                    <button class="btn btn-outline-info">Info</button>
+                    <button class="btn btn-outline-warning">Warning</button>
+                    <button class="btn btn-outline-danger">Danger</button>
+                    <button class="btn btn-outline-link">Link</button>
+                    <button class="btn btn-outline-dark">Dark</button>   
+                    <button class="btn btn-outline-light">Light</button>
+				</div>
+			</div>
+
+            <br>
+            <hr>
+            <h2>Tamaño de botones</h2>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary btn-sm">Boton small</button>
+                    <button class="btn btn-primary">Default button</button>
+                    <button class="btn btn-primary btn-lg">Large button</button>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <h2>Tamaño (ancho) de container</h2>
+            <div class="row">
+                <div class="col">
+                    <!-- grid en contenedor padre -->
+                   <div class="d-grid">
+                        <button class="btn btn-primary">Boton block</button>
+                    </div>
+                    <br>
+                   <div class="d-grid col-6 mx-auto">
+                        <button class="btn btn-primary">Boton block</button>
+                    </div>
+                </div>
+            </div>
+
+             <br>
+            <hr><hr>
+            <h1>Botones desplegables</h1>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br><hr>
+            <h2>Cabecera y linea drop(down)</h2>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown</button>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">Cabecera</h6></li>
+                            <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Header abajo</h6></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            
+            <h2>Para que se abra al final(down)</h2>
+             <br>
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown que se abre al final</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+             <hr>
+            <br>
+            <h2>Drop up</h2>
+             <br>
+            <div class="row">
+                <div class="col">
+                    <!-- vambiar aqui -->
+                    <div class="dropup">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+             <hr>
+            <br>
+            <h2>Drop end</h2>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <!-- vambiar aqui -->
+                    <div class="dropend">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropend</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+             <hr>
+            <br>
+            <h2>Drop Start</h2>
+             <br>
+            <div class="row">
+                <div class="col">
+                    <!-- vambiar aqui -->
+                    <div class="dropstart">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropstart</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                            <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</body>
+</html>
