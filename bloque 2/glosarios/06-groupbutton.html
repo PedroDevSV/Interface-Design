@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+		<script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+		<title>Document</title>
+		<style>
+			body {
+				background-color: rgb(224, 222, 219);
+				margin: 0 auto;
+				max-width: 1200px;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1>Grupos de botones</h1>
+			<hr />
+
+			<h5>Grupo unido</h5>
+			<div class="row">
+				<div class="col-12">
+					<div class="btn-group" aria-label="Basic example">
+						<button type="button" class="btn btn-primary">Left</button>
+						<button type="button" class="btn btn-primary">Middle</button>
+						<button type="button" class="btn btn-primary">Right</button>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<h5>Barra de botones</h5>
+			<div class="row">
+				<div class="col-12">
+					<div class="btn-toolbar">
+						<!-- margin end 3 -->
+						<div class="btn-group me-3">
+							<button class="btn btn-primary">bot 1</button>
+							<button class="btn btn-primary">bot 2</button>
+							<button class="btn btn-primary">bot 3</button>
+						</div>
+						<!-- Si queremos cambbiar tamaño, en el div de btn group -->
+						<div class="btn-group-lg me-3">
+							<button class="btn btn-outline-primary">bot 4</button>
+							<button class="btn btn-outline-primary">bot 5</button>
+							<button class="btn btn-outline-primary">bot 6</button>
+						</div>
+						<div class="btn-group">
+							<button class="btn btn-info">bot 7</button>
+							<button class="btn btn-info">bot 8</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<h5>Vertical</h5>
+			<div class="row">
+				<div class="col">
+					<div class="btn-group-vertical">
+						<button class="btn btn-secondary">1</button>
+						<button class="btn btn-secondary">2</button>
+						<button class="btn btn-secondary">3</button>
+						<button class="btn btn-secondary">4</button>
+					</div>
+				</div>
+			</div>
+
+            <hr />
+			<h5>Con desplegable</h5>
+            <div class="row">
+                <div class="col">
+                    <div class="btn-group">
+                        <button class="btn btn-info">1</button>
+                        <button class="btn btn-info">2</button>
+                        <div class="btn-group">
+                            <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item">link 1</a></li>
+                                <li><a href="" class="dropdown-item">link 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <hr/>
+			<h5>Grupo desplegables</h5>
+            <div class="row">
+                <div class="col">
+                    <div class="btn-group-vertical">
+                        <div class="btn-group dropend">
+                            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Menu 1</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item">Item 1</a></li>
+                                <li><a href="" class="dropdown-item">Item 2</a></li>
+                                <li><a href="" class="dropdown-item">Item 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown 2</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item">Item 1</a></li>
+                                <li><a href="" class="dropdown-item">Item 2</a></li>
+                                <li><a href="" class="dropdown-item">Item 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown 3</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item">Item 1</a></li>
+                                <li><a href="" class="dropdown-item">Item 2</a></li>
+                                <li><a href="" class="dropdown-item">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<hr/>
+			<h5>Grupo checkbox</h5>
+			<h6>Importante el label ponerle la clase boton</h6>
+			<div class="row">
+				<div class="col">
+					<!-- se crea como grupo de botones normal -->
+					<div class="btn-group">
+						<input type="checkbox" id="cine" class="btn-check" checked>
+						<label for="cine" class="btn btn-outline-primary">Cine</label>
+						<input type="checkbox" id="music" class="btn-check">
+						<label for="music" class="btn btn-outline-primary">Musica</label>
+						<input type="checkbox" id="deportes" class="btn-check">	
+						<label for="deportes" class="btn btn-outline-primary">Deportes</label>
+					</div>
+				</div>
+			</div>
+
+			<hr/>
+			<h5>Grupo radiobutton</h5>
+			<div class="row">
+				<div class="col">
+					<h6>Name igual para todos, si no no es radio</h6>
+					<div class="btn-group">
+						<input type="radio" id="solter" name="ecivil"  class="btn-check">
+						<label for="solter" class="btn btn-outline-primary">Soltero</label>
+						<input type="radio" id="casad" 	name="ecivil"  class="btn-check">
+						<label for="casad"  class="btn btn-outline-primary">casado</label>
+						<input type="radio" id="otro" 	name="ecivil"  class="btn-check">
+						<label for="otro"   class="btn btn-outline-primary">Otro</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

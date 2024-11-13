@@ -5,11 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
 		<script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
-		<title>Document</title>
+		<title>Glosario botones y desplegables</title>
         <style> 
             body{background-color: rgb(224, 222, 219);}
         </style>
 	</head>
+    <style>
+        body {
+            background-color: rgb(224, 222, 219);
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+    </style>
 	<body>
 		<div class="container-fluid">
             <br>
@@ -90,12 +98,14 @@
              <br>
             <hr><hr>
             <h1>Botones desplegables</h1>
+            <h4>Para que sea accesible (leer cod)</h4>
             <br>
             <div class="row">
                 <div class="col">
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown</button>
-                        <ul class="dropdown-menu">
+                        <!--  aria-labelledby añadimos accesibilidad para que lo lean todos los navegadores -->
+                        <ul class="dropdown-menu" aria-labelledby="ejemplo-desplegable">
                             <li><a href="" class="dropdown-item">Opcion 1</a></li>
                             <li><a href="" class="dropdown-item">Opcion 2</a></li>
                             <li><a href="" class="dropdown-item">Opcion 3</a></li>
@@ -110,7 +120,7 @@
             <div class="row">
                 <div class="col">
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown</button>
+                        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Con cabecera y linea</button>
                         <ul class="dropdown-menu">
                             <li><h6 class="dropdown-header">Cabecera</h6></li>
                             <li><a href="" class="dropdown-item">Opcion 1</a></li>
@@ -142,9 +152,9 @@
 
              <hr>
             <br>
-            <h2>Drop up</h2>
+            <h2>Definir donde se despliega</h2>
              <br>
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="col">
                     <!-- vambiar aqui -->
                     <div class="dropup">
@@ -156,13 +166,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
 
-             <hr>
-            <br>
-            <h2>Drop end</h2>
-            <br>
-            <div class="row">
                 <div class="col">
                     <!-- vambiar aqui -->
                     <div class="dropend">
@@ -174,15 +178,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
 
-             <hr>
-            <br>
-            <h2>Drop Start</h2>
-             <br>
-            <div class="row">
-                <div class="col">
-                    <!-- vambiar aqui -->
+                <div class="col">                  <!-- vambiar aqui -->
                     <div class="dropstart">
                         <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropstart</button>
                         <ul class="dropdown-menu dropdown-menu-end">
@@ -192,7 +189,10 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
+
+            <br>
 
 		</div>
 	</body>
