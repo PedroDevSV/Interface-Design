@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Input glosario</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="row">
+            <div class="col">
+                <br>
+                <h2>Todos los inputs</h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="user1" class="form-label">Text</label>
+                        <input type="text" name="" id="user1" class="form-control">
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <label for="user1" class="form-label">Password</label>
+                        <input type="password" name="" id="user1" class="form-control">
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <label for="user1" class="form-label">Correo</label>
+                        <input type="email" name="" id="user1" class="form-control">
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <label for="comment">Comentario</label>
+                        <textarea class="form-control" id="comment" rows="5" placeholder="Escribe tu comentario"></textarea>
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <label for="select">Selecciona:</label>
+                        <select name="" id="select" class="form-select">
+                            <option value="uno">Opcion 1</option>
+                            <option value="dos">Opcion 2</option>
+                            <option value="tres">Opcion 3</option>
+                        </select>
+                        <br>
+                        <label for="select">Selecciona:</label>
+                        <select name="" id="select" class="form-select">
+                            <!-- Para q no de valor sin elegir -->
+                            <option selected>Elige una</option>
+                            <option value="uno">Opcion 1</option>
+                            <option value="dos">Opcion 2</option>
+                            <option value="tres">Opcion 3</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <h3>check normal</h3>
+                        <div class="form-check">
+                            <label for="check" class="form-check-label">Checkeate esta</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input">
+                        </div>
+                        <div class="form-check">
+                            <label for="check" class="form-check-label" >Disabled</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" disabled>
+                        </div>
+                        <div class="form-check">
+                            <label for="check" class="form-check-label">Checked disabled</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" checked disabled>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div class="mb-3">
+                        <h3>en linea</h3>
+                         <div class="form-check-inline">
+                            <label for="check" class="form-check-label">Checkeate esta</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input">
+                        </div>
+                        <div class="form-check-inline">
+                            <label for="check" class="form-check-label" >Disabled</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" disabled>
+                        </div>
+                        <div class="form-check-inline">
+                            <label for="check" class="form-check-label">Checked disabled</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" checked disabled>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <h3>Radio button, inline igual que arriba </h3>
+                         <div class="form-check">
+                            <label for="check" class="form-check-label">Checkeate esta</label>
+                            <input type="radio" name="" id="check" class="form-check-input">
+                        </div>
+                        <div class="form-check">
+                            <label for="check" class="form-check-label" >Disabled</label>
+                            <input type="radio" name="" id="check" class="form-check-input" disabled>
+                        </div>
+                        <div class="form-check">
+                            <label for="check" class="form-check-label">Checked disabled</label>
+                            <input type="radio" name="" id="check" class="form-check-input" checked disabled>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <h3>Check switch</h3>
+                        <div class="form-check form-switch">
+                            <label for="check" class="form-check-label">Activar</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" checked>
+                        </div>
+                        <div class="form-check form-switch">
+                            <label for="check" class="form-check-label" >Disabled</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" disabled>
+                        </div>
+                        <div class="form-check form-switch">
+                            <label for="check" class="form-check-label">Checked disabled</label>
+                            <input type="checkbox" name="" id="check" class="form-check-input" checked disabled>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

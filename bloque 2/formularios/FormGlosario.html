@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid"> 
+        <h2>Primer form sencillo (vertical)</h2>
+       <form action="">
+            <div class="mb-3">
+                <label for="user" class="form-label">Login</label>
+                <input type="text" class="form-control" name="" id="user" placeholder="Usuario">
+            </div>
+            <div class="mb-3">
+                <label for="passw" class="form-label">Login</label>
+                <input type="password" class="form-control" name="" id="passw" placeholder="Password">
+            </div>
+            <button class="btn btn-primary">Sign in</button>
+       </form>
+    
+        <br>
+        <hr>
+        <h3>Misma linea</h3>
+        <form action="">
+            <div class="row">
+                <div class="col-auto">
+                    <label for="user" class="col-form-label">User</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="user" class="form-control" placeholder="user">
+                </div>
+                <div class="col-auto">
+                     <label for="passw" class="col-form-label">Password</label>
+                </div>
+                 <div class="col">
+                    <input type="password" name="" id="passw" class="form-control" placeholder="password">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" type="submit">SIgn in</button>
+                </div>
+            </div>
+       </form>
+
+        <br>
+        <hr>
+       <div class="row">
+            <h3>En horizontal</h3>
+            
+            <form action="">
+                <div class="row mb-3">
+                    <label class="col-2 col-form-label" for="user">Login</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="user" placeholder="User">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                     <label class="col-2 col-form-label" for="passw">Password</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="passw" placeholder="password">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">Sign in</div>
+                    <div class="col 10">
+                        <button class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </form>
+       </div>
+
+       
+
+
+    </div>
+</body>
+</html>

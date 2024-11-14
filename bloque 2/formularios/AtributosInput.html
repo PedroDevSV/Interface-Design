@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Atributo inputs</h2>
+    <br>
+    <div class="container"> 
+    <h3>Tamaño</h3>
+       <form action="">
+        <input type="text" name="" id="" class="form-control mt-3 form-control-sm" placeholder="pequeño">
+        <input type="text" name="" id="" class="form-control mt-3 mb-3 " placeholder="defecto">
+        <input type="text" name="" id="" class="form-control form-control-lg" placeholder="Tamaño grande">
+       </form>
+
+       <br>
+       <hr>
+       <h3>Disabled y readonly</h3>
+       <br>
+       <form action="">
+            <input type="text" class="form-control" placeholder="Solo lectura" readonly>
+        <input type="text" class="form-control mt-3 mb-3" placeholder="Disabled" disabled>
+       </form>
+
+       <hr>
+       <h3>Input con texto decorado</h3>
+       <br>
+       <form action="">
+        <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="exagerado q guapo">
+        </div>
+        <div class="input-group">
+            <input type="email" class="form-control" placeholder="Correo">
+            <span class="input-group-text">@ces-vegamedia.es</span>
+        </div>
+       </form>
+
+    <br>
+    <hr>
+       <form action="">
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" placeholder="Precio">
+                <span class="input-group-text">.00</span>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Cliente</span>
+                <input type="text" class="form-control col-auto" placeholder="Nombre">
+                <input type="text" class="form-control col-auto" placeholder="Apellidos">
+            </div>
+            <div class="input-group ">
+                <input type="text" class="form-control" placeholder="Buscar">
+                <button class="btn btn-primary">Buscar</button>
+            </div>
+       </form>
+
+       <br>
+       <hr>
+       <h3>Cuadros de ayuda</h3>
+       <br>
+       <form action="">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <label for="passwd" class="col-form-label">Password</label>
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+            </div>
+            <div class="col-auto">
+                <small class="form-text">Minimo 8 caracteres</small>
+            </div>
+        </div>
+        
+       </form>
+       <br>
+
+       <hr>
+       <form action="">
+            <div class="col-auto mb-3">
+                <label for="passwd" class="col-form-label">Password</label>
+                <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+                <small class="form-text">Minimo 8 caracteres</small>
+            </div>
+             <div class="col-auto mb-3">
+                <label for="passwd" class="col-form-label">Password</label>
+                <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+                <small class="form-text">Minimo 8 caracteres</small>
+            </div>
+       </form>
+       
+    </div>
+</body>
+</html>
