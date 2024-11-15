@@ -80,12 +80,12 @@
        </form>
        <br>
 
-       <hr>
+      
        <form action="">
             <div class="col-auto mb-3">
-                <label for="passwd" class="col-form-label">Password</label>
-                <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
-                <small class="form-text">Minimo 8 caracteres</small>
+                <label for="text" class="col-form-label">User</label>
+                <input type="text" class="form-control" id="passwd" placeholder="Usuario">
+                <small class="form-text">Mayus y minus</small>
             </div>
              <div class="col-auto mb-3">
                 <label for="passwd" class="col-form-label">Password</label>
@@ -93,7 +93,60 @@
                 <small class="form-text">Minimo 8 caracteres</small>
             </div>
        </form>
+    
        
+       <hr>
+      
+       <form action="">
+            <h2>Etiquetas flotantes</h2>
+            <small>form-floating</small>
+            <!-- Usando el div form-floating -->
+            <!-- primero input antes que label -->
+            <!--PLaceholder vacio para que haga la animación el label,  -->
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="text" class="form-control" placeholder="">
+                <label for="text">User</label>
+             </div>
+
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="passw" class="form-control" placeholder="">
+                <label for="passwd">Password</label>
+             </div>
+             
+       </form>
+
+       <br>
+       <hr>
+      
+       <form action="" class="was-validated">
+            <h2>Validación</h2>
+            <small>form.was-validated</small>
+
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="text" class="form-control" placeholder="" required>
+                <label for="text">User</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, rellena este campo</div>
+             </div>
+
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="passw" class="form-control" placeholder="" required>
+                <label for="passwd">Password</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, rellena este campo</div>
+             </div>
+
+             <div class="form-check mb-3">
+                <input type="checkbox" name="" id="check" class="form-check-input" required>
+                <label for="check" class="form-check-label">Acepto las condiciones y términos</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, acepta las condiciones antes</div>
+             </div>
+
+             <button class="btn btn-primary" type="submit">Aceptar</button>
+             
+       </form>
+
     </div>
 </body>
 </html>

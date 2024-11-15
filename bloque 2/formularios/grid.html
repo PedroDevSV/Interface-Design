@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        .ct{
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h2>Grid con formularios</h2>
+        <br>
+        <small>Form con gutter 3, espacio entre columnas</small>
+        <small>Gutter: g-* (horizontal y vert), gx-* (horizontal), gy-*(vertical)</small>
+        
+        <br>
+        <br>
+       <form action="" class="row g-3">
+            <div class="col-6">
+                <label for="text">Usuario</label>
+                <input type="text" id="text" class="form-control" placeholder="Usuario">
+            </div>
+            <div class="col-6">
+                <label for="contra">Contraseña</label>
+                <input type="password" class="form-control" id="contra" placeholder="Apellidos">
+            </div>
+           <div class="col-6">
+                <div class="form-check">
+                    <input type="checkbox" name="" id="ch" class="form-check-input">
+                    <label for="ch">Guarda usuario y contraseña</label>
+                </div>
+           </div>
+            <div class="col-6">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+            </div>
+        </form>
+        <hr>
+
+        <br>
+        <h2>Formulario responsive con grid</h2>
+        <form class="row g-3">
+            <div class="col-12 col-md-6">
+                <label for="text">Usuario</label>
+                <input type="text" id="text" class="form-control" placeholder="Usuario">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="contra">Correo</label>
+                <input type="email" class="form-control" id="contra" placeholder="Correo">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="comment">Comentario</label>
+                <textarea class="form-control" id="comment" rows="3" placeholder="Escribe tu comentario"></textarea>
+            </div>
+            <div class="col-12 col-md-4">
+                <label for="select">Nacionalidad:</label>
+                <select name="" id="select" class="form-select">
+                    <option value="uno">Española</option>
+                    <option value="dos">Peruana</option>
+                    <option value="tres">Panchita 2</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-2">
+                <label for="ct">Sexo:</label>
+                <div class="form-check row" id="ct">
+                    <div class="col-12">
+                        <input type="radio" name="radio" id="hombre" class="form-check-input">
+                        <label for="hombre" class="form-check-label">Hombre</label>
+                    </div>
+                    <div class="col-12">
+                        <input type="radio" name="radio" id="mujer" class="form-check-input">
+                        <label for="mujer" class="form-check-label">Mujer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto mx-auto">
+                <div class="form-check">
+                    <input type="checkbox" name="" id="hombre" class="form-check-input">
+                    <label for="hombre" class="form-check-label">Acepto las condiciones y términos </label>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <!-- d-grid coge todo el ancho -->
+            <div class="d-grid col-12 col-md-4 mx-auto">
+                <button class="btn btn-primary">Aceptar</button>
+            </div>
+        
+        </form>
+
+        <br>
+        <hr>
+        <h2>Repaso grid</h2>
+        <small>Para centrar contenedor en el centro de la página, vertical y horizontal:</small>
+        <div class="ct container">
+            <span>vh-100 Toma el valor de la pantalla en su 100% y lo centra realmente</span>
+            <div class="row justify-content-center align-items-center vh-100">
+                <div class="caja col-6">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ullam repudiandae. Iste at ipsum illo nesciunt ad nemo saepe ipsa debitis natus, eos soluta consectetur quo aliquid rerum recusandae iure!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellat minima saepe cumque dicta quos, ab dolorem, porro optio ea ut tenetur adipisci labore, omnis rerum iure error accusamus sed?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, cupiditate ad dolore nemo cumque quasi quos fuga asperiores expedita, aliquid minus exercitationem. Repellendus eum amet minus, unde explicabo consequatur alias?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
