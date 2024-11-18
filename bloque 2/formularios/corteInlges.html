@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        .grande{
+            font-size: 13pt;
+            text-align: center;
+        }
+        
+        .centrar{
+            text-align: center;
+        }
+        
+        header{
+            padding: 0;
+            margin-top: 5%;
+            text-align: center;
+            
+            
+        }
+        form{
+           font-size: 10pt;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <header><img src="corte.svg" width="300px"></header>
+
+        <form class="row justify-content-center mb-4 ">
+            <div class="cont col-7 col-md-6 col-lg-3 mt-4 mb-4">
+                <div class="col-12">
+                    <h5 class="centrar">Inicia sesión</h5>
+                </div>
+                <div class="col-12 mb-5">
+                    <p class="grande">Inicia sesión para acceder a todos nuestros servicios</p>
+                </div>
+                <div class="col-12 mb-4">
+                    <label for="cuenta" class="form-label">Cuenta de acceso</label>
+                    <input type="text" name="" id="cuenta" class="form-control" placeholder="Cuenta de acceso" required>
+                </div>
+               <div class="col-12 mb-3">
+                    <label for="passw">Contraseña</label>
+                    <input id="passw" type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="col-7 offset-5 mb-5">
+                    <small><u>¿Problemas con tu contraseña?</u></small>
+                </div>
+                <div class="col-12 d-grid mb-1">
+                    <button class="btn btn-dark">
+                        <small>INICIAR SESION</small>
+                    </button>
+                </div>
+                <div class="col-12 d-grid mb-1">
+                    <button class="btn btn-outline-dark">
+                        <small>¿AÚN SIN CUENTA? REGÍSTRATE</small>
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        
+    </div>
+</body>
+</html>
