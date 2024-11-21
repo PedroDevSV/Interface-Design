@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Alerts</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>ALERTS </h1>
+        <br>
+        <br>
+        <h2>Primeros alerts basicos</h2>
+        <br>
+        <div class="alert alert-success">
+            <b>Succes!!</b>Este cuadro de alerta indica accion exitosa
+        </div>
+        <div class="alert alert-info">
+            <b>Info </b>Este cuadro de alerta indica accion neutra
+        </div>
+        <div class="alert alert-warning">
+            <b>Warning </b>Este cuadro de alerta indica accion warning
+        </div>
+        <div class="alert alert-danger">
+            <b>Danger </b>Este cuadro de alerta indica accion peligrosa
+        </div>
+        <div class="alert alert-primary">
+            <b>Primary </b>Este cuadro de alerta primary
+        </div>
+         <div class="alert alert-secondary">
+            <b>Secondary </b>Este cuadro de alerta secondary
+        </div>
+         <div class="alert alert-light border-dark">
+            <b>Light con border-dark </b>Este cuadro de alerta light
+        </div>
+         <div class="alert alert-dark">
+            <b>dArk </b>Este cuadro de alerta dark
+        </div>
+        
+        <br>
+        <h3>Con enlace</h3>
+        <br>
+        <div class="alert alert-warning">
+            <b>Warning </b>Este cuadro de alerta indica accion warning
+            <a href="#" class="alert-link">Pincha aqui para saber más</a>
+        </div>
+        <div class="alert alert-danger">
+            <b>Danger </b>Este cuadro de alerta indica accion peligrosa
+            <a href="#" class="alert-link">Pincha aqui para saber más</a>
+        </div>
+
+        <br>
+        <h3>Con cierre</h3>
+        <br>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <b>Hecho </b>Este cuadro de alerta indica accion 
+            <b>Cierra en la x</b>
+        </div>
+         <h4>efecto atenuación</h4>
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <b>Hecho </b>Este cuadro de alerta indica accion 
+            <b>Cierra en la x</b>
+        </div>
+
+        <br>
+        <br>
+        <h2>Insignias / badgets </h2>
+        <span>para agregar información adicional contenido</span>
+
+        <br>
+        <h4>Encabezado h4 <span class="badge bg-secondary">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-success">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-danger">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-info text-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-warning text-dark">Warning text dark</span></h4>
+
+        <br>
+        <hr>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-secondary">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-success">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-danger">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-info text-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-warning text-dark">Warning text dark</span></h4>
+
+        <br>
+        <hr>
+        <h4>Dentro de boton</h4>
+        <button type="button" class="btn btn-outline-secondary text-dark">
+            Notificaciones <span class="badge bg-danger">8</span>
+        </button>
+        <button type="button" class="btn btn-primary">
+            Notificaciones <span class="badge bg-light text-dark">8</span>
+        </button>
+
+         <br>
+        <hr>
+        <h4>Esquina</h4>
+        <span>sin el position-relative no funciona</span>
+        <button type="button" class="btn btn-outline-secondary text-dark position-relative me-3">
+            Notificaciones <span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">+99</span>
+        </button>
+        <button type="button" class="btn btn-primary  position-relative">
+            Notificaciones <span class="rounded-circle p-2 bg-danger position-absolute top-0 start-100 translate-middle"></span>
+        </button>
+
+        <br>
+        <hr>
+        <br>
+        
+        <h1>Cards</h1>
+        <br>
+
+        <h3>Colores de fondo</h3>
+        <div class="card mb-3 bg-primary text-white">
+            <div class="card-body">Card body</div>
+        </div>
+          <div class="card mb-3 bg-secondary text-dark">
+            <div class="card-body">Card body</div>
+        </div>
+
+          <div class="card mb-3 bg-dark text-white">
+            <div class="card-body">Card body</div>
+        </div>
+
+          <div class="card mb-3 bg-warning text-white">
+            <div class="card-body">Card body</div>
+        </div>
+
+          <div class="card mb-3 bg-danger text-white">
+            <div class="card-body">Card body</div>
+        </div>
+
+        <div class="card mb-3 bg-light text-dark">
+            <div class="card-body">Card body</div>
+        </div>
+
+        <hr>
+        <br>
+        <h3>Alinear</h3>
+        <div class="card mb-3 bg-light text-dark">
+            <div class="card-body text-start">Card body izquierda</div>
+        </div>
+        <div class="card mb-3 bg-light border-danger text-dark">
+            <div class="card-body text-center">Card body bordes rojos centrado</div>
+        </div>
+        <div class="card mb-3 bg-light text-dark">
+            <div class="card-body text-end">Card body derecha</div>
+        </div>
+
+        <hr>
+        <br>
+        <h3>Tamaños</h3>
+        <br>
+        <div class="card mb-3 bg-dark text-white w-100">
+            <div class="card-body">w-100</div>
+        </div>
+
+          <div class="card mb-3 bg-warning text-dark w-75">
+            <div class="card-body"> w-75</div>
+        </div>
+
+          <div class="card mb-3 bg-danger text-white w-50 ">
+            <div class="card-body">w-50</div>
+        </div>
+
+        <div class="card mb-3 bg-primary text-white" style="width: 300px;">
+            <div class="card-body">300px</div>
+        </div>
+
+         <hr>
+        <br>
+        <h3>Clases card</h3>
+        <br>
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5 class="card-title">Titulo</h5>
+                <p class="card-text">Ejmeplo de texto card</p>
+                <a href="" class="card-link">Link1</a>
+                <a href="" class="card-link">Link2</a>
+            </div>
+        </div>
+
+      <hr>
+      <h4>COn imagen</h4>
+      <div class="card" style="width: 300px;">
+            <div class="card-img-top">
+                <img src="images/avatar2.png" width="100%" alt="">
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title">Titulo</h5>
+                <p class="card-text">Ejmeplo de texto card</p>
+                <a href="" class="btn btn-primary">Link1</a>
+            </div>
+        </div>
+         <br>
+       <div class="card" style="width: 300px;">
+           <div class="card-body text-center">
+               <h5 class="card-title">Titulo</h5>
+               <p class="card-text">Ejmeplo de texto card</p>
+               <a href="" class="btn btn-primary">Link1</a>
+            </div>
+            <div class="card-img-bottom">
+                <img src="images/avatar2.png" width="100%" alt="">
+            </div>
+      </div>
+
+      <br>
+       <hr>
+      <h4>Clickable todo</h4>
+      <h5>stretched-link en el enlace</h5>
+      <div class="card" style="width: 300px;">
+            <div class="card-img-top">
+                <img src="images/avatar3.png" width="100%" alt="">
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title">Titulo</h5>
+                <p class="card-text">Ejmeplo de texto card</p>
+                <a href="#" class="btn btn-primary d-grid stretched-link">Link1</a>
+            </div>
+        </div>
+        <br>
+        <h5>Ponemos enlace en imagen y no hace falta boton</h5>
+        <br>
+        <div class="card" style="width: 300px;">
+            <div class="card-img-top">
+                <a href="#" class="stretched-link">
+                    <img src="images/vegamedia01.jpg" width="100%" alt="">
+                </a>
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title">Titulo</h5>
+                <p class="card-text">Ejmeplo de texto card</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        
+
+    </div>
+</body>
+</html>
