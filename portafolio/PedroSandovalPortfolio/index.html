@@ -130,99 +130,67 @@
                 <div class="row justify-content-center mt-4">
                      <!-- list group de bootstrap -->
                     <div class="proyects">
-                        <h4 class="text-center">Proyectos</h4>
+                        <h4 class="text-start ms-1 text-white">Proyectos  </h4>
+                        <span class="letraColor"></span>
                         <div class="list-group ">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#hosteleriaModal">
-                                <div class="d-flex w-100 justify-content-between">
+                            
+                            <a class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#hosteleriaModal">
+                                <div class="d-flex w-100 justify-content-between ">
                                     <h5 class="">Hostelería</h5>
-                                    <small>2 empresas en vigor</small>
+                                    <small>Principal</small>
                                 </div>
-                                <p class="mb-1 mt-1">Software dedicado a <b>restaurantes</b>, gestión de pedidos y productos, <span class="letraSub">aplicación interna</span> para camareros además de una 
-                                    <span class="letraSub">página web</span> para <b>pedidos online.</b></p>
-                                <small>Alternativa eficiente y personalizada a just-eat</small>
+                                
+                                <p class="mb-3 mt-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Software dedicado a <b>restaurantes</b>, gestión de pedidos y productos, <span class="letraSub">aplicación interna</span> para camareros además de una
+                                <span class="letraSub">página web</span> para <b>pedidos online.</b>
+                            </p>
+                            
+                            <button class="boton btn" onclick="window.open('https://restaurante.pedro-sandoval.es', '_blank')">Acceder</button>
+                                    
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#gestionModal">
+                            <a  class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#gestionModal">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Gestión de empresas</h5>
                                     <small class="text-muted">1 en vigor</small>
                                 </div>
-                                <p class="mb-1">Aplicación para empleados, <span class="letraSub">contabilidad y gestión</span> interna de la organización.</p>
+                                <p class="mb-3 mt-2">Aplicación para empleados, <span class="letraSub">contabilidad y gestión</span> interna de la organización.</p>
                                 <small class="text-muted">ERP personalizado</small>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#paginasModal">
+                            <a class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#paginasModal">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Páginas web</h5>
                                     <small class="text-muted">8 empresas satisfechas</small>
                                 </div>
-                                <p class="mb-1">Sitios web personalizados integrando <span class="letraSub">herramientas SEO</span> para mejorar <b>posicionamiento</b> y visitas a la misma.</p>
+                                <p class="mb-3 mt-2">Sitios web personalizados integrando <span class="letraSub">herramientas SEO</span> para mejorar <b>posicionamiento</b> y visitas a la misma.</p>
                                 <small class="text-muted">Estilos impecables adaptados a tu marca personal</small>
                             </a>
-
-                            <!-- Modales -->
-                            <div class="modal fade" id="hosteleriaModal" tabindex="-1" aria-labelledby="hosteleriaModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="hosteleriaModalLabel">Hostelería</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <!-- Content for Hostelería modal -->
-                                            Software dedicado a <b>restaurantes</b>, gestión de pedidos y productos, <span class="letraSub">aplicación interna</span> para camareros además de una 
-                                            <span class="letraSub">página web</span> para <b>pedidos online.</b>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal fade" id="gestionModal" tabindex="-1" aria-labelledby="gestionModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="gestionModalLabel">Gestión de empresas</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <!-- Content for Gestión de empresas modal -->
-                                            Aplicación para empleados, <span class="letraSub">contabilidad y gestión</span> interna de la organización.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal fade" id="paginasModal" tabindex="-1" aria-labelledby="paginasModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="paginasModalLabel">Páginas web</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <!-- Content for Páginas web modal -->
-                                            Sitios web personalizados integrando <span class="letraSub">herramientas SEO</span> para mejorar <b>posicionamiento</b> y visitas a la misma.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          
                         </div>
                     </div>
+                    
                 </div>
-                
             </div>
         </section>
         <section id="contacto">
             <article class="row">
                 <h3 class="borde mt-3 text-white">Contacto</h3>
+                <form action="" class="row justify-content-center">
+                    <div class="col-11 col-md-6 col-lg-5 form-floating mb-3 mt-3">
+                        <input type="text" name=""   id="text" class="form-control " placeholder="">
+                        <label for="text">Nombre</label>
+                    </div>
+
+                    <div class="col-11 col-md-6 col-lg-5 form-floating mb-3 mt-3">
+                        <input type="email" name=""  id="passw" class="form-control" placeholder="">
+                        <label for="passwd">Correo </label>
+                    </div>
+                    <div class="col-11 col-md-12 col-lg-10 mb-3 mt-3">
+                        <textarea class="form-control" id="comment" rows="6" placeholder="Escribe tu comentario"></textarea>
+                        <label for="comment">Comentario</label>
+                    </div>
+                    <div class="d-grid col-7 col-md-3 mb-3 ">
+                        <input type="submit" value="Enviar" class="btn btn-warning ">
+
+                    </div>
+                </form>
             </article>
         </section>
 

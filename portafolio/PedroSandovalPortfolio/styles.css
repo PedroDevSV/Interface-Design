@@ -96,7 +96,11 @@ nav{
     transition: 0.7s;
      
 }
-
+.boton{
+    background-color: var(--brand-color);
+    color: white;
+   
+}
 .escalarPoco:hover,.imag:hover{
     transform: scale(1.03);
     background-color: rgb(231, 231, 231);
