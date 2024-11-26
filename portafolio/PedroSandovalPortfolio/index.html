@@ -79,38 +79,39 @@
             </article>
         </section>
         <section id="portafolio">
+
+            <h3 class="borde text-white mt-3">Portafolio</h3>
             <article class="row mt-3">
-                <h3 class="borde ms-3">Portafolio</h3>
-                <div class="row justify-content-start">
-                    <div class="col-md-4 mb-3">
+                <div class="row justify-content-center">
+                    <div class="col-9 col-md-4 mb-3">
                         <img src="images/glasgow.jpg" class="img-fluid" alt="Garito en glasgow">
                     </div>
-                    <div class="col-md-4 mb-2">
-                        <img src="images/dublin.jpg" class="img-fluid" alt="Photo 6">
-                        <!-- cambiar esta foto -->
-                        <img src="images/raro.jpeg" class="img-fluid mt-3" alt="Photo 4">
-                    </div>
-                    <div class="col-md-4 mb-2">
+                    <div class="col-9 col-md-4 mb-3">
                         <img src="images/moto.jpeg" class="img-fluid" alt="Photo 1">
                         <img src="images/padel.jpg" class="img-fluid mt-2" alt="Photo 2">
                          
+                    </div>
+                    <div class="col-9 col-md-4 mb-3">
+                        <!-- cambiar esta foto -->
+                        <img src="images/temple.jpg" class="img-fluid" alt="Photo 4">
                     </div>
                 </div>
             </article>
 
         </section>
         <section id="about">
-            <h3 class="borde ms-3 mt-3">Sobre mí</h3>
+            <h3 class="borde mt-3 text-white">Sobre mí</h3>
             <div class="row justify-content-center">
-                <main class="perfil col-10 col-md-4 mb-4 ">
+                <main class="perfil col-10 col-sm-10 col-md-7 col-lg-4 mb-4 ">
+                    
                     <!-- aqui va imagen --> 
-                    <img src="images/dublin.jpg" class="img-fluid mt-3" alt="Photo 6">
+                    <img src="images/dublin.jpg" class="img-fluid mt-3 imag" alt="Photo 6">
 
                     
                 </main>
-                <aside class="col-10 col-md-7">
+                <aside class="col-10  col-md-7">
                     <!-- aqui info -->
-                     <div class="content">
+                     <div class="content mt-3">
                         <h4 class="text-center"> <span class="letraSub">Programador</span> <span class="letraColor ">Full-stack</span></h4>
                         <div class="imgContainer">
                             <img src="images/java.png"  class="logo" width="75px" alt="">
@@ -129,9 +130,9 @@
                 <div class="row justify-content-center mt-4">
                      <!-- list group de bootstrap -->
                     <div class="proyects">
-                        <h4>Proyectos</h4>
+                        <h4 class="text-center">Proyectos</h4>
                         <div class="list-group ">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#hosteleriaModal">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="">Hostelería</h5>
                                     <small>2 empresas en vigor</small>
@@ -140,22 +141,79 @@
                                     <span class="letraSub">página web</span> para <b>pedidos online.</b></p>
                                 <small>Alternativa eficiente y personalizada a just-eat</small>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#gestionModal">
                                 <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Gestión de empresas</h5>
-                                <small class="text-muted">1 en vigor</small>
+                                    <h5 class="mb-1">Gestión de empresas</h5>
+                                    <small class="text-muted">1 en vigor</small>
                                 </div>
                                 <p class="mb-1">Aplicación para empleados, <span class="letraSub">contabilidad y gestión</span> interna de la organización.</p>
                                 <small class="text-muted">ERP personalizado</small>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#paginasModal">
                                 <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Páginas web</h5>
-                                <small class="text-muted">8 empresas satisfechas</small>
+                                    <h5 class="mb-1">Páginas web</h5>
+                                    <small class="text-muted">8 empresas satisfechas</small>
                                 </div>
                                 <p class="mb-1">Sitios web personalizados integrando <span class="letraSub">herramientas SEO</span> para mejorar <b>posicionamiento</b> y visitas a la misma.</p>
                                 <small class="text-muted">Estilos impecables adaptados a tu marca personal</small>
                             </a>
+
+                            <!-- Modales -->
+                            <div class="modal fade" id="hosteleriaModal" tabindex="-1" aria-labelledby="hosteleriaModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="hosteleriaModalLabel">Hostelería</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Content for Hostelería modal -->
+                                            Software dedicado a <b>restaurantes</b>, gestión de pedidos y productos, <span class="letraSub">aplicación interna</span> para camareros además de una 
+                                            <span class="letraSub">página web</span> para <b>pedidos online.</b>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="gestionModal" tabindex="-1" aria-labelledby="gestionModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="gestionModalLabel">Gestión de empresas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Content for Gestión de empresas modal -->
+                                            Aplicación para empleados, <span class="letraSub">contabilidad y gestión</span> interna de la organización.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="paginasModal" tabindex="-1" aria-labelledby="paginasModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="paginasModalLabel">Páginas web</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Content for Páginas web modal -->
+                                            Sitios web personalizados integrando <span class="letraSub">herramientas SEO</span> para mejorar <b>posicionamiento</b> y visitas a la misma.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -164,7 +222,7 @@
         </section>
         <section id="contacto">
             <article class="row">
-                <h3 class="borde mt-3">Contacto</h3>
+                <h3 class="borde mt-3 text-white">Contacto</h3>
             </article>
         </section>
 
