@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- CDN bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="images/icono.png" type="image/png">
     <title>Portafolio Pedro Sandoval</title>
 </head>
-<body>
+<body class="cuerpo">
    <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
             <a href="https://pedro-sandoval.es" target="_blank" class="navbar-brand ms-3">
@@ -41,8 +42,8 @@
     </nav>
     <div class="container"> 
         <section>
-            <div class="row text-center mt-1">
-                <h2 class="dev">Web <span class="typing-animation">developer</span></h2>
+            <div class="row text-center mt-2">
+                <h2 class="dev">Web <span class="dev typing-animation">developer</span></h2>
             </div>
             <article>
                
@@ -81,7 +82,7 @@
         <section id="portafolio">
 
             <h3 class="borde text-white mt-3">Portafolio</h3>
-            <article class="row mt-3">
+            <article class="row mt-3  ms-3">
                 <div class="row justify-content-center">
                     <div class="col-9 col-md-4 mb-3">
                         <img src="images/glasgow.jpg" class="img-fluid" alt="Garito en glasgow">
@@ -101,29 +102,30 @@
         </section>
         <section id="about">
             <h3 class="borde mt-3 text-white">Sobre mí</h3>
-            <div class="row justify-content-center">
-                <main class="perfil col-10 col-sm-10 col-md-7 col-lg-4 mb-4 ">
+            <div class="row justify-content-between ms-4">
+                <main class="perfil col-11 col-md-8 offset-md-2 offset-lg-0 col-lg-5 mb-4  ">
                     
                     <!-- aqui va imagen --> 
                     <img src="images/dublin.jpg" class="img-fluid mt-3 imag" alt="Photo 6">
 
                     
                 </main>
-                <aside class="col-10  col-md-7">
+                
+                <aside class="col-11  col-md-8 offset-md-2 offset-lg-0  col-lg-6  me-3">
                     <!-- aqui info -->
-                     <div class="content mt-3">
-                        <h4 class="text-center"> <span class="letraSub">Programador</span> <span class="letraColor ">Full-stack</span></h4>
+                     <div class="content mt-3 pb-4">
+                        <h4 class="text-center"> <span class="letraSub">Programador</span> <span class="letraColor typing-animation">Full-stack</span></h4>
                         <div class="imgContainer">
-                            <img src="images/java.png"  class="logo" width="75px" alt="">
-                            <img src="images/css.png"   class="logo" width="75px" alt="">
-                            <img src="images/php.png"   class="logo" width="75px" alt="">
-                            <img src="images/react.png" class="logo" width="75px" alt="">
-                            <img src="images/js.png"    class="logo" width="75px" alt="">
-                            <img src="images/mysql.png" class="logo" width="75px" alt="">
+                            <img src="images/java.png"  class="logo" width="60px" alt="">
+                            <img src="images/css.png"   class="logo" width="60px" alt="">
+                            <img src="images/php.png"   class="logo" width="60px" alt="">
+                            <!-- <img src="images/react.png" class="logo" wi6th="75px" alt=""> -->
+                            <img src="images/js.png"    class="logo" width="60px" alt="">
+                            <img src="images/mysql.png" class="logo" width="60px" alt="">
 					    </div>
                         <div class="row text-left g-2 mt-3 ms-3">
                             <h4>Pedro Sandoval</h4>
-                            <p class="texto">Tengo 23 años y actualmente desarrollo aplicaciones personalizadas según todo tipo de necesidades. <b>Compromiso 100%</b> y <span class="letraSub">soporte técnico</span> para que el cliente quede satisfecho con el producto. </p>                          
+                            <p class="texto pe-4">Tengo 23 años y actualmente desarrollo aplicaciones personalizadas según todo tipo de necesidades. <b>Compromiso 100%</b> y <span class="letraSub">soporte técnico</span> para que el cliente quede satisfecho con el producto. </p>                          
                         </div>
                      </div>
                 </aside>
@@ -134,7 +136,7 @@
                         <span class="letraColor"></span>
                         <div class="list-group ">
                             
-                            <a class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#hosteleriaModal">
+                            <a class="content col-12 list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#hosteleriaModal">
                                 <div class="d-flex w-100 justify-content-between ">
                                     <h5 class="">Hostelería</h5>
                                     <small>Principal</small>
@@ -147,7 +149,7 @@
                             <button class="boton btn" onclick="window.open('https://restaurante.pedro-sandoval.es', '_blank')">Acceder</button>
                                     
                             </a>
-                            <a  class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#gestionModal">
+                            <a  class="content col-12 list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#gestionModal">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Gestión de empresas</h5>
                                     <small class="text-muted">1 en vigor</small>
@@ -155,7 +157,7 @@
                                 <p class="mb-3 mt-2">Aplicación para empleados, <span class="letraSub">contabilidad y gestión</span> interna de la organización.</p>
                                 <small class="text-muted">ERP personalizado</small>
                             </a>
-                            <a class="list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#paginasModal">
+                            <a class="content col-12 list-group-item list-group-item-action flex-column align-items-start escalarPoco" data-bs-toggle="modal" data-bs-target="#paginasModal">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Páginas web</h5>
                                     <small class="text-muted">8 empresas satisfechas</small>
@@ -170,21 +172,19 @@
             </div>
         </section>
         <section id="contacto">
-            <article class="row">
+            <article class="row ms-3 me-4">
                 <h3 class="borde mt-3 text-white">Contacto</h3>
-                <form action="" class="row justify-content-center">
-                    <div class="col-11 col-md-6 col-lg-5 form-floating mb-3 mt-3">
-                        <input type="text" name=""   id="text" class="form-control " placeholder="">
-                        <label for="text">Nombre</label>
+                <form action="" class="fondoForm row justify-content-center mb-3 ms-2 me-3">
+                    <div class="col-11 col-md-6 col-lg-5 mb-3 mt-3">
+                        <input type="text" name=""   id="text" class="form-control " placeholder="Nombre">
                     </div>
 
-                    <div class="col-11 col-md-6 col-lg-5 form-floating mb-3 mt-3">
-                        <input type="email" name=""  id="passw" class="form-control" placeholder="">
-                        <label for="passwd">Correo </label>
+                    <div class="col-11 col-md-6 col-lg-5 mb-3 mt-3">
+                        <input type="email" name=""  id="passw" class="form-control" placeholder="Correo">
+                        
                     </div>
                     <div class="col-11 col-md-12 col-lg-10 mb-3 mt-3">
-                        <textarea class="form-control" id="comment" rows="6" placeholder="Escribe tu comentario"></textarea>
-                        <label for="comment">Comentario</label>
+                        <textarea class="form-control" id="comment" rows="5" placeholder="Escribe tu comentario"></textarea>
                     </div>
                     <div class="d-grid col-7 col-md-3 mb-3 ">
                         <input type="submit" value="Enviar" class="btn btn-warning ">
@@ -193,29 +193,58 @@
                 </form>
             </article>
         </section>
-
     </div>
-    <!-- efecto typing -->
+    <footer class="text-center text-white text-lg-start mt-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Sígueme en redes sociales</h5>
+                    <p>Puedes contactar conmigo o estar al día de mis novedades</p>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-3 mb-4 mb-md-0 text-lg-end">
+                    <a href="https://www.instagram.com" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-facebook" style="font-size: 2rem;"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-youtube" style="font-size: 2rem;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center p-3 text-white">
+                © 2024 Pedro Sandoval Martínez
+            </div>
+        </div>
+    </footer>
+    
+    
      <script>
-       document.addEventListener('DOMContentLoaded', function() {
-           const textElement = document.querySelector('.typing-animation');
-           const text = textElement.textContent;
-           let index = 0;
-           function type() {
-               if (index < text.length) {
-                   textElement.textContent = text.substring(0, index + 1);
-                   index++;
-                   setTimeout(type, 200);
-               } else {
-                   setTimeout(() => {
-                       index = 0;
-                       textElement.textContent = '';
-                       setTimeout(type, 600);
-                   }, 5000);
-               }
-           }
-           type();
+        // Efecto typing. Para los elementos de texto con la clase typing-animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const textElements = document.querySelectorAll('.typing-animation');
+            textElements.forEach(textElement => {
+                const text = textElement.textContent;
+                let index = 0;
+                function type() {
+                    // Va mostrando con un timeout letra por letra para dar efecto
+                    if (index < text.length) {
+                        textElement.textContent = text.substring(0, index + 1);
+                        index++;
+                        setTimeout(type, 200);
+                    } else {
+                        setTimeout(() => {
+                            index = 0;
+                            textElement.textContent = '';
+                            setTimeout(type, 600);
+                        }, 5000);
+                    }
+                }
+                type();
+            });
         });
+
     </script>
 </body>
 </html>
