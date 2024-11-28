@@ -132,3 +132,9 @@ footer{
     border-top: 1px solid var(--brand-color);
     background-color: rgb(20, 20, 20);
 }
+
+.modal-content {
+    border:none;
+    background: none;
+ 
+}

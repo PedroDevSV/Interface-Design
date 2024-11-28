@@ -48,8 +48,7 @@
             <article>
                
                 <div id="ejemplo-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <!-- clase para contenedor, carousel-inner -->
-                    <!-- Primera parte, las imagenes -->
+                   
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/chill.jpg" alt="" class="d-block w-100 img-fluid">
@@ -62,7 +61,6 @@
                         </div>
                     </div>
 
-                    <!-- Segunda parte, los controles -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
@@ -70,7 +68,7 @@
                         <span class="carousel-control-next-icon"></span>
                     </button>
 
-                    <!-- Indicadores -->
+                 
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1" ></button>
@@ -84,25 +82,62 @@
             <article class="row mt-3  ms-3">
                 <div class="row justify-content-center">
                     <div class="col-9 col-md-4 mb-3">
-                        <a href="images/glasgow.jpg" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">
-                            <img src="images/glasgow.jpg" class="logo img-fluid">
-                        </a>
+                        <img src="images/glasgow.jpg" class="logo img-fluid" data-bs-toggle="modal" data-bs-target="#modal1" alt="Imagen 1">
                     </div>
                     <div class="col-9 col-md-4 mb-3">
-                       <a href="images/moto.jpeg" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">
-                            <img src="images/moto.jpeg" class="logo img-fluid">
-                        </a>
-                        <a href="images/padel.jpg" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">
-                            <img src="images/padel.jpg" class="logo img-fluid">
-                        </a>
-                         
+                        <img src="images/moto.jpeg" class="logo img-fluid" data-bs-toggle="modal" data-bs-target="#modal2" alt="Imagen 2">
+                        <img src="images/padel.jpg" class="logo img-fluid" data-bs-toggle="modal" data-bs-target="#modal3" alt="Imagen 3">
                     </div>
                     <div class="col-9 col-md-4 mb-3">
-                       <a href="images/temple.jpg" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">
-                            <img src="images/temple.jpg" class="logo img-fluid">
-                        </a>
+                        <img src="images/temple.jpg" class="logo img-fluid" data-bs-toggle="modal" data-bs-target="#modal4" alt="Imagen 4">
+                    </div>
+                   
+                <!-- Modal 1 -->
+    
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="images/glasgow.jpg" class="img-fluid" alt="Imagen 1">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Modal 2 -->
+                 <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modalFondo modal-content">
+                            <div class="modal-body">
+                                <img src="images/moto.jpeg" class="img-fluid" alt="Imagen 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modalFondo modal-content">
+                            <div class="modal-body">
+                                <img src="images/padel.jpg" class="img-fluid" alt="Imagen 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4 -->
+                 <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modalFondo modal-body ">
+                                <img src="images/temple.jpg" class="img-fluid" alt="Imagen 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
             </article>
 
         </section>
@@ -121,7 +156,7 @@
                             <img src="images/java.png"  class="logo" width="60px" alt="">
                             <img src="images/css.png"   class="logo" width="60px" alt="">
                             <img src="images/php.png"   class="logo" width="60px" alt="">
-                            <!-- <img src="images/react.png" class="logo" wi6th="75px" alt=""> -->
+                        
                             <img src="images/js.png"    class="logo" width="60px" alt="">
                             <img src="images/mysql.png" class="logo" width="60px" alt="">
 					    </div>
@@ -132,7 +167,6 @@
                      </div>
                 </aside>
                 <div class="row justify-content-center mt-4">
-                     <!-- list group de bootstrap -->
                     <div class="proyects">
                         <h4 class="text-start ms-1 text-white">Proyectos  </h4>
 
