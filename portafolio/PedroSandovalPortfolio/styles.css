@@ -10,7 +10,7 @@ nav{
 }
 
 .logo,.imag{
-    transition: 0.4s;
+    transition: 0.4s ease;
 }
 
 .logo:hover{
@@ -34,10 +34,12 @@ nav{
     border-bottom: 1.2px solid var(--brand-color);
 }
 
-.carousel-control-prev-icon,.carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-color: rgb(0, 0, 0);
     width: 15%;
     opacity: 0.8;
+
     transition: opacity 0.15s ease;
 }
 /* Para hacer más pequeño el carousel */
@@ -46,7 +48,8 @@ nav{
         max-height: 400px;
     }
 }
-.carousel-control-prev-icon:hover,.carousel-control-next-icon:hover {
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
     opacity: 0.9;
 }
 
@@ -95,7 +98,7 @@ nav{
 }
 
 .escalarPoco{
-    transition: 0.7s;
+    transition: 0.7s ease;
      
 }
 .boton{
