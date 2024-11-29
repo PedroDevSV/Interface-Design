@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(207, 207, 207);
+    font-family: "Exo 2",sans-serif;
+    font-size: 12pt;
+}
+
+nav{
+    background-color:white;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.logoLetra{
+    font-size: 0.9em;
+    color: #9dbe15;
+    border-bottom:1.5px solid #9dbe15;
+    transition: 0.5s;
+}
+.logo,.nav-enlaces{
+    transition: 0.5s;
+}
+#tituloMovil{
+    color: #9dbe15;
+}
+
+.letraNav{
+    font-size: 1.2em;
+}
+.nav-enlaces{
+    transition: 0.5s ease;
+}
+
+.efectoGrande:hover{
+    transform: scale(1.05);
+}
+
+.nav-enlaces:hover{
+    transform: scale(1.03);
+    color: black;
+   
+}
+
+.videoContainer{
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+video{
+    border-radius: 4px;
+}
