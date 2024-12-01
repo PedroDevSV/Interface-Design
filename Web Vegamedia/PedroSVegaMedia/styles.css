@@ -44,8 +44,11 @@ nav{
     background-color: white;
     border-radius: 4px;
     padding: 10px;
+    
 }
 
 video{
     border-radius: 4px;
+    width: 80%;
+    height: auto;
 }
