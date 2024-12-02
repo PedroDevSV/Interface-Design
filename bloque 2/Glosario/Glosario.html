@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Glosario Completo</title>
+    <style>
+        .code-container {
+            background-color: rgb(226, 226, 226);
+            margin: 30px;
+            padding: 5px;
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1">Índice</h1>
+        <button onclick="location.href='#apartado1'" class="btn btk">Encabezados</button>
+        <button onclick="location.href='#apartado2'" class="btn btk">Parrafos</button>
+        <button onclick="location.href='#apartado3'" class="btn btk">Imagenes</button>
+        <button onclick="location.href='#apartado4'" class="btn btk">Tablas</button>
+        <button onclick="location.href='#apartado5'" class="btn btk">Botones y Desplegables</button>
+        <button onclick="location.href='#apartado6'" class="btn btk">Groupbutton</button>
+        <button onclick="location.href='#apartado7'" class="btn btk">Formularios</button>
+        <button onclick="location.href='#apartado8'" class="btn btk">Ejercicios Hechos</button>
+        <button onclick="location.href='#apartado9'" class="btn btk">Grids</button>
+        <button onclick="location.href='#apartado10'" class="btn btk">Atributos Inputs</button>
+        <button onclick="location.href='#apartado11'" class="btn btk">Alerts</button>
+        <button onclick="location.href='#apartado12'" class="btn btk">Insignias / Badges</button>
+        <button onclick="location.href='#apartado13'" class="btn btk">Cards</button>
+        <button onclick="location.href='#apartado14'" class="btn btk">Collapse</button>
+        <button onclick="location.href='#apartado15'" class="btn btk">Acordeon</button>
+        <button onclick="location.href='#apartado16'" class="btn btk">Carousel</button>
+        <button onclick="location.href='#apartado17'" class="btn btk">Modales</button>
+        <hr>
+
+        <h2 id="apartado1">Encabezados</h2>
+        <h1 class="display-1">Encabezado Display-1</h1>
+        <h2 class="display-2">Encabezado Display-2</h2>
+        <h3 class="display-3">Encabezado Display-3</h3>
+        <h4 class="display-4">Encabezado Display-4</h4>
+        <div class="code-container">
+            <pre><code>&lt;h1 class="display-1"&gt;Encabezado Display-1&lt;/h1&gt;
+&lt;h2 class="display-2"&gt;Encabezado Display-2&lt;/h2&gt;
+&lt;h3 class="display-3"&gt;Encabezado Display-3&lt;/h3&gt;
+&lt;h4 class="display-4"&gt;Encabezado Display-4&lt;/h4&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado2">Parrafos</h2>
+        <p class="lead">Clase Lead resalta parrafos</p>
+        <p>Texto normal</p>
+        <p class="text-start">Alineacion izquierda</p>
+        <p class="text-center">Alineacion centrada</p>
+        <p class="text-end">Alineacion derecha</p>
+        <div class="code-container">
+            <pre><code>&lt;p class="lead"&gt;Clase Lead resalta parrafos&lt;/p&gt;
+&lt;p&gt;Texto normal&lt;/p&gt;
+&lt;p class="text-start"&gt;Alineacion izquierda&lt;/p&gt;
+&lt;p class="text-center"&gt;Alineacion centrada&lt;/p&gt;
+&lt;p class="text-end"&gt;Alineacion derecha&lt;/p&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado3">Imagenes</h2>
+        <img src="images/perro1.jpg" alt="perro 1" class="rounded">
+        <img src="images/perro2.jpg" alt="Labrador" class="rounded-circle">
+        <img src="images/perro3.jpg" alt="perro3" class="img-thumbnail">
+        <div class="code-container">
+            <pre><code>&lt;img src="images/perro1.jpg" alt="perro 1" class="rounded"&gt;
+&lt;img src="images/perro2.jpg" alt="Labrador" class="rounded-circle"&gt;
+&lt;img src="images/perro3.jpg" alt="perro3" class="img-thumbnail"&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado4">Tablas</h2>
+        <table class="table table-striped">
+            <tr><th>Nombre</th><th>Apellido</th><th>Edad</th></tr>
+            <tr><td>Juan</td><td>Perez</td><td>21</td></tr>
+            <tr><td>Maria</td><td>Lopez</td><td>22</td></tr>
+        </table>
+        <div class="code-container">
+            <pre><code>&lt;table class="table table-striped"&gt;
+&lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Apellido&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Juan&lt;/td&gt;&lt;td&gt;Perez&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Maria&lt;/td&gt;&lt;td&gt;Lopez&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado5">Botones y Desplegables</h2>
+        <h3>Tipos de Botones</h3>
+        <button class="btn">Basic</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-link">Link</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-light">Light</button>
+        <div class="code-container">
+            <pre><code>&lt;button class="btn"&gt;Basic&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-link"&gt;Link&lt;/button&gt;
+&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
+&lt;button class="btn btn-light"&gt;Light&lt;/button&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Objetos que pueden ser botones</h3>
+        <a href="#" class="btn btn-primary">Enlace</a>
+        <input type="button" class="btn btn-primary" value="Input">
+        <input type="submit" class="btn btn-primary" value="Submit">
+        <div class="code-container">
+            <pre><code>&lt;a href="#" class="btn btn-primary"&gt;Enlace&lt;/a&gt;
+&lt;input type="button" class="btn btn-primary" value="Input"&gt;
+&lt;input type="submit" class="btn btn-primary" value="Submit"&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Botones sin fondo (outline)</h3>
+        <button class="btn">Basic</button>
+        <button class="btn btn-outline-primary">Primary</button>
+        <button class="btn btn-outline-secondary">Secondary</button>
+        <button class="btn btn-outline-success">Success</button>
+        <button class="btn btn-outline-info">Info</button>
+        <button class="btn btn-outline-warning">Warning</button>
+        <button class="btn btn-outline-danger">Danger</button>
+        <button class="btn btn-outline-link">Link</button>
+        <button class="btn btn-outline-dark">Dark</button>
+        <button class="btn btn-outline-light">Light</button>
+        <div class="code-container">
+            <pre><code>&lt;button class="btn"&gt;Basic&lt;/button&gt;
+&lt;button class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-outline-link"&gt;Link&lt;/button&gt;
+&lt;button class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;
+&lt;button class="btn btn-outline-light"&gt;Light&lt;/button&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Tamaño de botones</h3>
+        <button class="btn btn-primary btn-sm">Boton small</button>
+        <button class="btn btn-primary">Default button</button>
+        <button class="btn btn-primary btn-lg">Large button</button>
+        <div class="code-container">
+            <pre><code>&lt;button class="btn btn-primary btn-sm"&gt;Boton small&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Default button&lt;/button&gt;
+&lt;button class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Tamaño (ancho) de container</h3>
+        <div class="d-grid">
+            <button class="btn btn-primary">Boton block</button>
+        </div>
+        <br>
+        <div class="d-grid col-6 mx-auto">
+            <button class="btn btn-primary">Boton block</button>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="d-grid"&gt;
+&lt;button class="btn btn-primary"&gt;Boton block&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="d-grid col-6 mx-auto"&gt;
+&lt;button class="btn btn-primary"&gt;Boton block&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Botones desplegables</h3>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown</button>
+            <ul class="dropdown-menu" aria-labelledby="ejemplo-desplegable">
+                <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                <li><a href="" class="dropdown-item">Opcion 3</a></li>
+            </ul>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="dropdown"&gt;
+&lt;button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Boton dropdown&lt;/button&gt;
+&lt;ul class="dropdown-menu" aria-labelledby="ejemplo-desplegable"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Cabecera y linea drop(down)</h3>
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Con cabecera y linea</button>
+            <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Cabecera</h6></li>
+                <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><h6 class="dropdown-header">Header abajo</h6></li>
+            </ul>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="dropdown"&gt;
+&lt;button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"&gt;Con cabecera y linea&lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li&gt;&lt;h6 class="dropdown-header"&gt;Cabecera&lt;/h6&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h6 class="dropdown-header"&gt;Header abajo&lt;/h6&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Para que se abra al final(down)</h3>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Boton dropdown que se abre al final</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                <li><a href="" class="dropdown-item">Opcion 3</a></li>
+            </ul>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="dropdown"&gt;
+&lt;button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Boton dropdown que se abre al final&lt;/button&gt;
+&lt;ul class="dropdown-menu dropdown-menu-end"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Definir donde se despliega</h3>
+        <div class="row justify-content-between">
+            <div class="col">
+                <div class="dropup">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                        <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                        <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="dropend">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropend</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                        <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                        <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="dropstart">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropstart</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a href="" class="dropdown-item">Opcion 1</a></li>
+                        <li><a href="" class="dropdown-item">Opcion 2</a></li>
+                        <li><a href="" class="dropdown-item">Opcion 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="row justify-content-between"&gt;
+&lt;div class="col"&gt;
+&lt;div class="dropup"&gt;
+&lt;button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Dropup&lt;/button&gt;
+&lt;ul class="dropdown-menu dropdown-menu-end"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col"&gt;
+&lt;div class="dropend"&gt;
+&lt;button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;dropend&lt;/button&gt;
+&lt;ul class="dropdown-menu dropdown-menu-end"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col"&gt;
+&lt;div class="dropstart"&gt;
+&lt;button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;dropstart&lt;/button&gt;
+&lt;ul class="dropdown-menu dropdown-menu-end"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado6">Groupbutton</h2>
+        <h3>Grupo unido</h3>
+        <div class="btn-group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-group" aria-label="Basic example"&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Barra de botones</h3>
+        <div class="btn-toolbar">
+            <div class="btn-group me-3">
+                <button class="btn btn-primary">bot 1</button>
+                <button class="btn btn-primary">bot 2</button>
+                <button class="btn btn-primary">bot 3</button>
+            </div>
+            <div class="btn-group-lg me-3">
+                <button class="btn btn-outline-primary">bot 4</button>
+                <button class="btn btn-outline-primary">bot 5</button>
+                <button class="btn btn-outline-primary">bot 6</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-info">bot 7</button>
+                <button class="btn btn-info">bot 8</button>
+            </div>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-toolbar"&gt;
+&lt;div class="btn-group me-3"&gt;
+&lt;button class="btn btn-primary"&gt;bot 1&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;bot 2&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;bot 3&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="btn-group-lg me-3"&gt;
+&lt;button class="btn btn-outline-primary"&gt;bot 4&lt;/button&gt;
+&lt;button class="btn btn-outline-primary"&gt;bot 5&lt;/button&gt;
+&lt;button class="btn btn-outline-primary"&gt;bot 6&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="btn-group"&gt;
+&lt;button class="btn btn-info"&gt;bot 7&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;bot 8&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Vertical</h3>
+        <div class="btn-group-vertical">
+            <button class="btn btn-secondary">1</button>
+            <button class="btn btn-secondary">2</button>
+            <button class="btn btn-secondary">3</button>
+            <button class="btn btn-secondary">4</button>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-group-vertical"&gt;
+&lt;button class="btn btn-secondary"&gt;1&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;2&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;3&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;4&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Con desplegable</h3>
+        <div class="btn-group">
+            <button class="btn btn-info">1</button>
+            <button class="btn btn-info">2</button>
+            <div class="btn-group">
+                <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">link 1</a></li>
+                    <li><a href="" class="dropdown-item">link 2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-group"&gt;
+&lt;button class="btn btn-info"&gt;1&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;2&lt;/button&gt;
+&lt;div class="btn-group"&gt;
+&lt;button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt;Dropdown&lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;link 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;link 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Grupo desplegables</h3>
+        <div class="btn-group-vertical">
+            <div class="btn-group dropend">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Menu 1</button>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">Item 1</a></li>
+                    <li><a href="" class="dropdown-item">Item 2</a></li>
+                    <li><a href="" class="dropdown-item">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropend">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown 2</button>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">Item 1</a></li>
+                    <li><a href="" class="dropdown-item">Item 2</a></li>
+                    <li><a href="" class="dropdown-item">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropend">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown 3</button>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">Item 1</a></li>
+                    <li><a href="" class="dropdown-item">Item 2</a></li>
+                    <li><a href="" class="dropdown-item">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-group-vertical"&gt;
+&lt;div class="btn-group dropend"&gt;
+&lt;button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;Menu 1&lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="btn-group dropend"&gt;
+&lt;button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;Dropdown 2&lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="btn-group dropend"&gt;
+&lt;button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;Dropdown 3&lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="" class="dropdown-item"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Grupo checkbox</h3>
+        <h6>Importante el label ponerle la clase boton</h6>
+        <div class="btn-group">
+            <input type="checkbox" id="cine" class="btn-check" checked>
+            <label for="cine" class="btn btn-outline-primary">Cine</label>
+            <input type="checkbox" id="music" class="btn-check">
+            <label for="music" class="btn btn-outline-primary">Musica</label>
+            <input type="checkbox" id="deportes" class="btn-check">
+            <label for="deportes" class="btn btn-outline-primary">Deportes</label>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-group"&gt;
+&lt;input type="checkbox" id="cine" class="btn-check" checked&gt;
+&lt;label for="cine" class="btn btn-outline-primary"&gt;Cine&lt;/label&gt;
+&lt;input type="checkbox" id="music" class="btn-check"&gt;
+&lt;label for="music" class="btn btn-outline-primary"&gt;Musica&lt;/label&gt;
+&lt;input type="checkbox" id="deportes" class="btn-check"&gt;
+&lt;label for="deportes" class="btn btn-outline-primary"&gt;Deportes&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Grupo radiobutton</h3>
+        <h6>Name igual para todos, si no no es radio</h6>
+        <div class="btn-group">
+            <input type="radio" id="solter" name="ecivil" class="btn-check">
+            <label for="solter" class="btn btn-outline-primary">Soltero</label>
+            <input type="radio" id="casad" name="ecivil" class="btn-check">
+            <label for="casad" class="btn btn-outline-primary">casado</label>
+            <input type="radio" id="otro" name="ecivil" class="btn-check">
+            <label for="otro" class="btn btn-outline-primary">Otro</label>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="btn-group"&gt;
+&lt;input type="radio" id="solter" name="ecivil" class="btn-check"&gt;
+&lt;label for="solter" class="btn btn-outline-primary"&gt;Soltero&lt;/label&gt;
+&lt;input type="radio" id="casad" name="ecivil" class="btn-check"&gt;
+&lt;label for="casad" class="btn btn-outline-primary"&gt;casado&lt;/label&gt;
+&lt;input type="radio" id="otro" name="ecivil" class="btn-check"&gt;
+&lt;label for="otro" class="btn btn-outline-primary"&gt;Otro&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado7">Formularios</h2>
+        <form action="">
+            <div class="mb-3">
+                <label for="user" class="form-label">Login</label>
+                <input type="text" class="form-control" id="user" placeholder="Usuario">
+            </div>
+            <div class="mb-3">
+                <label for="passw" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passw" placeholder="Password">
+            </div>
+            <button class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="code-container">
+            <pre><code>&lt;form action=""&gt;
+&lt;div class="mb-3"&gt;
+&lt;label for="user" class="form-label"&gt;Login&lt;/label&gt;
+&lt;input type="text" class="form-control" id="user" placeholder="Usuario"&gt;
+&lt;/div&gt;
+&lt;div class="mb-3"&gt;
+&lt;label for="passw" class="form-label"&gt;Password&lt;/label&gt;
+&lt;input type="password" class="form-control" id="passw" placeholder="Password"&gt;
+&lt;/div&gt;
+&lt;button class="btn btn-primary"&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado8">Ejercicios Hechos</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="p-3 bg-primary text-white">.col-4</div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 bg-secondary text-white">.col-4</div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 bg-success text-white">.col-4</div>
+            </div>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="row"&gt;
+&lt;div class="col-4"&gt;
+&lt;div class="p-3 bg-primary text-white"&gt;.col-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-4"&gt;
+&lt;div class="p-3 bg-secondary text-white"&gt;.col-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-4"&gt;
+&lt;div class="p-3 bg-success text-white"&gt;.col-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 class="display-1" id="apartado8">Ejercicios</h2>
+        <br>
+        <form action="">
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" placeholder="Precio">
+                <span class="input-group-text">.00</span>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Cliente</span>
+                <input type="text" class="form-control col-auto" placeholder="Nombre">
+                <input type="text" class="form-control col-auto" placeholder="Apellidos">
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar">
+                <button class="btn btn-primary">Buscar</button>
+            </div>
+        </form>
+        <hr>
+        <br>
+        <h2>Ejercicio vegamedia</h2>
+        <form class="row justify-content-center align-items-center vh-100">
+            <div class="cont col-7 col-md-6 col-lg-3 g-3">
+                <div class="col-12 mb-4 mt-5">
+                    <img src="images/logovegamedia.jpg" class="img-flu g-0" alt="" width="30%">
+                </div>
+                <div class="col-12 mb-3">
+                    <h3>Inicia sesión</h3>
+                </div>
+                <div class="col-12 form-floating mb-3">
+                    <input type="text" name="" id="text" class="form-control" placeholder="">
+                    <label for="text">Usuario</label>
+                    <small class="form-text">Ejemplo: alumno.daw@ces-vegamegia.es</small>
+                </div>
+                <div class="col-12 form-floating mb-3">
+                    <input type="text" name="" id="passw" class="form-control" placeholder="">
+                    <label for="passwd">Password</label>
+                </div>
+                <div class="d-grid col-12 mb-3">
+                    <button class="btn btn-success btn-lg">INICIAR SESIÓN</button>
+                </div>
+                <small class="form-text">No tienes cuenta ? Regístrate primo</small>
+                <div class="d-grid col-12 mb-3">
+                    <button class="btn btn-outline-success btn-lg">CREAR CUENTA</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <hr>
+
+        <h2 id="apartado9">Grids</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="p-3 bg-primary text-white">.col-4</div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 bg-secondary text-white">.col-4</div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 bg-success text-white">.col-4</div>
+            </div>
+        </div>
+        <div class="code-container">
+            <pre><code>&lt;div class="row"&gt;
+&lt;div class="col-4"&gt;
+&lt;div class="p-3 bg-primary text-white"&gt;.col-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-4"&gt;
+&lt;div class="p-3 bg-secondary text-white"&gt;.col-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-4"&gt;
+&lt;div class="p-3 bg-success text-white"&gt;.col-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado10">Atributos Inputs</h2>
+        <form action="">
+            <input type="text" class="form-control mt-3 form-control-sm" placeholder="pequeño">
+            <input type="text" class="form-control mt-3 mb-3" placeholder="defecto">
+            <input type="text" class="form-control form-control-lg" placeholder="Tamaño grande">
+        </form>
+        <div class="code-container">
+            <pre><code>&lt;form action=""&gt;
+&lt;input type="text" class="form-control mt-3 form-control-sm" placeholder="pequeño"&gt;
+&lt;input type="text" class="form-control mt-3 mb-3" placeholder="defecto"&gt;
+&lt;input type="text" class="form-control form-control-lg" placeholder="Tamaño grande"&gt;
+&lt;/form&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado11">Barra Navegadores</h2>
+        <h3>Menu horizontal basico</h3>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Menu horizontal centrado</h3>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav justify-content-center"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Menu horizontal derecha</h3>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav justify-content-end"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Menu vertical</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav flex-column"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Contacto&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Menu de pestañas tab</h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav nav-tabs"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link active"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link"&gt;Contacto&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="#" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Menu de pestañas pills</h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav nav-pills"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link active"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link"&gt;Blog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link"&gt;Contacto&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h3>Tab con nav-fill</h3>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a href="" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <div class="code-container">
+            <pre><code>&lt;ul class="nav nav-pills nav-fill"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link active"&gt;Inicio&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link"&gt;Blog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link"&gt;Contacto&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a href="" class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado10">Atributos Inputs</h2>
+        <form action="">
+            <input type="text" class="form-control mt-3 form-control-sm" placeholder="pequeño">
+            <input type="text" class="form-control mt-3 mb-3" placeholder="defecto">
+            <input type="text" class="form-control form-control-lg" placeholder="Tamaño grande">
+        </form>
+        <div class="code-container">
+            <pre><code>&lt;form action=""&gt;
+&lt;input type="text" class="form-control mt-3 form-control-sm" placeholder="pequeño"&gt;
+&lt;input type="text" class="form-control mt-3 mb-3" placeholder="defecto"&gt;
+&lt;input type="text" class="form-control form-control-lg" placeholder="Tamaño grande"&gt;
+&lt;/form&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+<h3>Disabled y readonly</h3>
+<br>
+<form action="">
+    <input type="text" class="form-control" placeholder="Solo lectura" readonly>
+    <input type="text" class="form-control mt-3 mb-3" placeholder="Disabled" disabled>
+</form>
+<hr>
+<h3>Input con texto decorado</h3>
+<br>
+<form action="">
+    <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="exagerado q guapo">
+    </div>
+    <div class="input-group">
+        <input type="email" class="form-control" placeholder="Correo">
+        <span class="input-group-text">@ces-vegamedia.es</span>
+    </div>
+</form>
+<br>
+<hr>
+<form action="">
+    <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" placeholder="Precio">
+        <span class="input-group-text">.00</span>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Cliente</span>
+        <input type="text" class="form-control col-auto" placeholder="Nombre">
+        <input type="text" class="form-control col-auto" placeholder="Apellidos">
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Buscar">
+        <button class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+<br>
+<hr>
+<h3>Cuadros de ayuda</h3>
+<br>
+<form action="">
+    <div class="row align-items-center">
+        <div class="col-auto">
+            <label for="passwd" class="col-form-label">Password</label>
+        </div>
+        <div class="col">
+            <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+        </div>
+        <div class="col-auto">
+            <small class="form-text">Minimo 8 caracteres</small>
+        </div>
+    </div>
+</form>
+<br>
+<form action="">
+    <div class="col-auto mb-3">
+        <label for="text" class="col-form-label">User</label>
+        <input type="text" class="form-control" id="passwd" placeholder="Usuario">
+        <small class="form-text">Mayus y minus</small>
+    </div>
+    <div class="col-auto mb-3">
+        <label for="passwd" class="col-form-label">Password</label>
+        <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+        <small class="form-text">Minimo 8 caracteres</small>
+    </div>
+</form>
+<hr>
+<form action="">
+    <h2>Etiquetas flotantes (efecto guapo)</h2>
+    <small>form-floating</small>
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" name="" id="text" class="form-control" placeholder="">
+        <label for="text">User</label>
+    </div>
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" name="" id="passw" class="form-control" placeholder="">
+        <label for="passwd">Password</label>
+    </div>
+</form>
+<br>
+<hr>
+<form action="" class="was-validated">
+    <h2>Validación</h2>
+    <small>form.was-validated</small>
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" name="" id="text" class="form-control" placeholder="" required>
+        <label for="text">User</label>
+        <div class="valid-feedback">Válido</div>
+        <div class="invalid-feedback">Por favor, rellena este campo</div>
+    </div>
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" name="" id="passw" class="form-control" placeholder="" required>
+        <label for="passwd">Password</label>
+        <div class="valid-feedback">Válido</div>
+        <div class="invalid-feedback">Por favor, rellena este campo</div>
+    </div>
+    <div class="form-check mb-3">
+        <input type="checkbox" name="" id="check" class="form-check-input" required>
+        <label for="check" class="form-check-label">Acepto las condiciones y términos</label>
+        <div class="valid-feedback">Válido</div>
+        <div class="invalid-feedback">Por favor, acepta las condiciones antes</div>
+    </div>
+    <button class="btn btn-primary" type="submit">Aceptar</button>
+</form>
+
+
+        <h2 id="apartado11">Alerts</h2>
+        <div class="code-container">
+            <pre><code>&lt;div class="alert alert-success"&gt;
+&lt;b&gt;Succes!!&lt;/b&gt;Este cuadro de alerta indica accion exitosa
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;
+&lt;b&gt;Info &lt;/b&gt;Este cuadro de alerta indica accion neutra
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;
+&lt;b&gt;Warning &lt;/b&gt;Este cuadro de alerta indica accion warning
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;
+&lt;b&gt;Danger &lt;/b&gt;Este cuadro de alerta indica accion peligrosa
+&lt;/div&gt;
+&lt;div class="alert alert-primary"&gt;
+&lt;b&gt;Primary &lt;/b&gt;Este cuadro de alerta primary
+&lt;/div&gt;
+&lt;div class="alert alert-secondary"&gt;
+&lt;b&gt;Secondary &lt;/b&gt;Este cuadro de alerta secondary
+&lt;/div&gt;
+&lt;div class="alert alert-light border-dark"&gt;
+&lt;b&gt;Light con border-dark &lt;/b&gt;Este cuadro de alerta light
+&lt;/div&gt;
+&lt;div class="alert alert-dark"&gt;
+&lt;b&gt;dArk &lt;/b&gt;Este cuadro de alerta dark
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado12">Insignias / Badges</h2>
+        <div class="code-container">
+            <pre><code>&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-secondary"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-success"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-danger"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-info text-dark"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-dark"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-warning text-dark"&gt;Warning text dark&lt;/span&gt;&lt;/h4&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado13">Cards</h2>
+        <div class="code-container">
+            <pre><code>&lt;div class="card mb-3 bg-primary text-white"&gt;
+&lt;div class="card-body"&gt;Card body&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3 bg-secondary text-dark"&gt;
+&lt;div class="card-body"&gt;Card body&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3 bg-dark text-white"&gt;
+&lt;div class="card-body"&gt;Card body&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3 bg-warning text-white"&gt;
+&lt;div class="card-body"&gt;Card body&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3 bg-danger text-white"&gt;
+&lt;div class="card-body"&gt;Card body&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3 bg-light text-dark"&gt;
+&lt;div class="card-body"&gt;Card body&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado14">Collapse</h2>
+        <div class="code-container">
+            <pre><code>&lt;div class="row"&gt;
+&lt;h4&gt;Plegable simple con boton&lt;/h4&gt;
+&lt;p&gt;Haz click par más info&lt;/p&gt;
+&lt;button type="button" class="col-2 btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable1"&gt;Plegable enlace&lt;/button&gt;
+&lt;div id="plegable1" class="collapse"&gt;
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, hic nesciunt. Assumenda quasi laborum repudiandae cumque necessitatibus excepturi inventore magni tempora accusamus asperiores quas neque, aliquid ratione est eos corporis.
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+        <hr>
+
+        <h2 id="apartado15">Acordeon</h2>
+        <div class="code-container">
+            <pre><code>&lt;div class="accordion" id="accordionExample"&gt;
+&lt;div class="accordion-item"&gt;
+&lt;h2 class="accordion-header" id="headingOne"&gt;
+&lt;button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+Accordion Item #1
+&lt;/button&gt;
+&lt;/h2&gt;
+&lt;div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"&gt;
+&lt;div class="accordion-body"&gt;
+&lt;div class="card mb-3"&gt;
+&lt;div class="card-body"&gt;
+&lt;h5 class="card-title"&gt;Card title 1&lt;/h5&gt;
+&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3"&gt;
+&lt;div class="card-body"&gt;
+&lt;h5 class="card-title"&gt;Card title 2&lt;/h5&gt;
+&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card mb-3"&gt;
+&lt;div class="card-body"&gt;
+&lt;h5 class="card-title"&gt;Card title 3&lt;/h5&gt;
+&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="accordion-item"&gt;
+&lt;h2 class="accordion-header" id="headingTwo"&gt;
+&lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+Accordion Item #2
+&lt;/button&gt;
+&lt;/h2&gt;
+&lt;div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"&gt;
+&lt;div class="accordion-body"&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="accordion-item"&gt;
+&lt;h2 class="accordion-header" id="headingThree"&gt;
+&lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt;
+Accordion Item #3
+&lt;/button&gt;
+&lt;/h2&gt;
+&lt;div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion<!DOCTYPE html>
+<!-- ...existing code... -->
+</body>
+</html>
