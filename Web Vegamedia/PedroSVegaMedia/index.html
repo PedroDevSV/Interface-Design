@@ -21,7 +21,7 @@
                 <span class="efectoGrande logoLetra d-none d-md-grid">C.E.S Vegamedia</span>
             </a>
             <div class="d-grid d-md-none me-4">
-                <span id="tituloMovil" class="letraNav">C.E.S Vegamedia</span>
+                <span id="colorVerde" class="letraNav">C.E.S Vegamedia</span>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
                 <span class="navbar-toggler-icon"></span>
@@ -53,18 +53,73 @@
 
     <div class="container">
         <div class="videoContainer row justify-content-between mt-3">
-            <div class="col-12 col-lg-7 ">
-                
-                <video class="w-100"  autoplay muted>
+            <div class="col-12 col-md-10 col-lg-7  ms-md-5 ms-lg-0 ">
+                <video class="w-100 mt-lg-3 mb-md-1"  autoplay muted loop>
                     <source src="images/presentacionrecorte.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="col-12 col-lg-4 me-5">
-                <h2 class="mb-md-5 mt-3">Presentación</h2>
-                <p class="mt-4">El CES Vega Media es un centro concertado donde la enseñanza es totalmente <b>gratuita</b>, gestionado por una <u>cooperativa</u> de profesores con vocación por la formación..</p>
-                <p class="mt-5">Somos un centro <b>dinámico</b>, siempre buscando nuestro espacio, tenemos nuestra propia identidad que nos hace diferentes.</p>
+
+            <div class="col-12 col-md-10 col-lg-4 me-5 ms-md-5 ms-lg-0">
+                <h1 class="mt-4 text-success">Presentación</h1>
+                
+                <div class="centrarAltura mt-1">
+                    <p >El CES Vega Media un centro concertado donde la enseñanza es totalmente <b>gratuita</b>, gestionado por una <u>cooperativa</u> de profesores con vocación por la formación..</p>
+                    <p>Somos un centro <b>dinámico</b>, siempre buscando nuestro espacio, tenemos nuestra propia identidad que nos hace diferentes.</p>
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="row mt-3">
+            <div class="accordion videoContainer">
+                <div class="accordion-item  border-white">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed " id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"  aria-controls="collapseOne">
+                            Como cooperativa
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Hemos crecido y seguimos creciendo por nuestro Proyecto Cooperativo, dónde las personas y una fuerte apuesta por un proyecto de calidad, son los elementos fundamentales de nuestra organización.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  border-white">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Experiencia
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Aquí se mezclan la experiencia, madurez y estabilidad que aportan los socios más antiguos, con la frescura y la ilusión que nos traen las últimas generaciones, pero todos con un denominador común: “Seguir trabajando por nuestro Centro, por una mayor calidad en nuestros servicios, siendo flexibles a los cambios constantes de la sociedad para adaptarnos a ellos en las mejores condiciones, y aprovechando la creatividad y la iniciativa que sólo las personas pueden aportar”.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-white">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Organización
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            El órgano responsable de la alta gestión de la cooperativa, es el Consejo Rector que está formado por siete personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+
+        <div class="col-lg-4 col-md-12 mb-2 mb-md-0">
+            <img src="images/logoVMfooter.png" alt="" class="ms-5 img-fluid">
+            <p class="mt-2">© 2024 CES Vegamedia</p>
+        </div>
+        <div class="col-12 col-lg-5 offset-lg-3 mb-4 mb-md-0 text-lg-end">
+            
+        </div>           
+    </footer>
 </body>
 </html>
