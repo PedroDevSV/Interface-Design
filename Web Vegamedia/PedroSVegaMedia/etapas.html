@@ -53,11 +53,145 @@
     </nav>
 
     <section class="container">
-        <div class="infoContainer row justify-content-between mt-3">
-            <h3>Etapas Educativas</h3>
+        <div class="infoContainer row justify-content-between mt-3 ps-4 pe-4">
+            <h1 class="text-success text-center">Etapas Educativas</h1>
+            <blockquote class="blockquote-footer text-center">Disfruta de nuestra oferta formativa</blockquote>
+                
+                <div class="card col-6 col-md-4 col-lg-3 ">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">E. Infantil</h5>
+                        <span class="badge bg-info mt-2">3 a 6 años</span>
+                        <p class="card-text d-none d-lg-grid mt-3">La mejor educación para los más pequeños</p>
+    
+                        <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#modalInfantil">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">E. Primaria</h5>
+                        <span class="badge bg-secondary mt-2">6 a 12 años</span>
+                        <p class="card-text d-none d-lg-grid mt-3">La mejor educación para los más pequeños</p>
+                        <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#modalPrimaria">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 offset-md-0 col-lg-3 ">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">E. Secundaria</h5>
+                        <span class="badge bg-warning mt-2 text-dark">12 a 16 años</span>
+                        <p class="card-text d-none d-lg-grid mt-3">La mejor educación para los más pequeños</p>
+                        <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#modalSecundaria">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 offset-md-4 offset-lg-0 col-lg-3 ">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">FP Básica</h5>
+                        <span class="badge bg-dark mt-2">15 años</span>
+                        <p class="card-text d-none d-lg-grid mt-3">La mejor educación para los más pequeños</p>
+                        <button type="button" class="btn btn-outline-success  mt-2" data-bs-toggle="modal" data-bs-target="#modalBasica">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+            <!-- Modal Educación Infantil -->
+            <div class="modal fade" id="modalInfantil" tabindex="-1" aria-labelledby="modalInfantilLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalInfantilLabel">Educación Infantil</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <p class="text-start">Esta etapa está dedicada al fomento y el desarrollo integral de <b>personalidad individual</b> de cada uno de nuestros alumnos mediante la promoción de las habilidades sociales, emocionales, cognitivas y motrices
+                            básicas.</p>
+                            <p class="mt-2">
+                            Nuestro proyecto propio es <u>adaptable</u> a las características de cada grupo y alumno, siendo el niño el que
+                            marca la dinámica según sus necesidades, intereses y capacidades.</p>
+                            <img src="images/niños.jpg" class="img-fluid mt-2 bordes" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Primaria -->
+            <div class="modal fade" id="modalPrimaria" tabindex="-1" aria-labelledby="modalPrimariaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalPrimariaLabel">Primaria</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <p>Esta etapa está dedicada al desarrollo del interés y al fomento de la <b>cultura general</b>. Los
+                            alumnos alcanzarán su capacidad deductiva y lógica a través de la propia <u>experimentación</u>.</p>
+                            <p class="mt-2">Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que
+                            marca la dinámica según sus necesidades, intereses y capacidades.</p>
+                            <img src="images/primaria.jpg" class="img-fluid mt-2 bordes" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Secundaria -->
+            <div class="modal fade" id="modalSecundaria" tabindex="-1" aria-labelledby="modalSecundariaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSecundariaLabel">Secundaria</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <p>La finalidad de la
+                                educación secundaria obligatoria es proporcionar a todos los chicos y chicas una educación que les permita
+                                asegurar un desarrollo personal sólido, adquirir las competencias culturales y sociales
+                                relativas a la expresión y comprensión oral, a la escritura, al cálculo, a la resolución de problemas de la vida
+                                cotidiana</p>
+                                <p>También al rechazo de todo tipo de comportamientos discriminatorios por razón de sexo, a la igualdad de
+                                derechos y oportunidades entre mujeres y hombres, a la autonomía personal, a la corresponsabilidad y la
+                                interdependencia personal.</p>
+                            <img src="images/eso.jpg" class="img-fluid mt-2 bordes" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Básica -->
+            <div class="modal fade" id="modalBasica" tabindex="-1" aria-labelledby="modalBasicaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalBasicaLabel">Formación profesional básica</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <p>Este ciclo, cofinanciado por la Unión Europea, tiene como objetivos la reducción del abandono escolar
+                            temprano, el aprendizaje permanente y convalidación de las competencias adquiridas y el refuerzo de los
+                            vínculos con el mercado laboral y calidad de la formación profesional.</p>
+                            <img src="images/basica.jpg" class="img-fluid mt-2 bordes" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           <h3 class="text-success text-center mt-4">Nuestros ciclos formativos</h3>
         </div>
-        <!--Añadir cards con modales para ver cada etapa  -->
-        <!-- a cada card de etapa, poner badget con la edad del curso -->
     </section>
     <footer class=" mt-4">
         <div class="container p-4">

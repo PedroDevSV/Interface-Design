@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Glosario Completo</title>
     <style>
         .code-container {
@@ -1267,6 +1267,46 @@
 &lt;/div&gt;</code></pre>
             <button onclick="copyCode(this)">Copiar código</button>
         </div>
+        <br>
+              <h3>Clases card</h3>
+        <br>
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5 class="card-title">Titulo</h5>
+                <p class="card-text">Ejmeplo de texto card</p>
+                <a href="" class="card-link">Link1</a>
+                <a href="" class="card-link">Link2</a>
+            </div>
+        </div>
+
+      <hr>
+      <h4>COn imagen</h4>
+      <div class="card" style="width: 300px;">
+            <div class="card-img-top">
+                <img src="images/avatar2.png" width="100%" alt="">
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title">Titulo</h5>
+                <p class="card-text">Ejmeplo de texto card</p>
+                <a href="" class="btn btn-primary">Link1</a>
+            </div>
+        </div>
+         <br>
+       <div class="card" style="width: 300px;">
+           <div class="card-body text-center">
+               <h5 class="card-title">Titulo</h5>
+               <p class="card-text">Ejmeplo de texto card</p>
+               <a href="" class="btn btn-primary">Link1</a>
+            </div>
+            <div class="card-img-bottom">
+                <img src="images/avatar2.png" width="100%" alt="">
+            </div>
+      </div>
+
+      <br>
+
+        
+        <br>
         <hr>
       <h4>Clickable todo</h4>
       <h5>stretched-link en el enlace</h5>
@@ -1480,5 +1520,128 @@ Accordion Item #3
 &lt;/h2&gt;
 &lt;div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion<!DOCTYPE html>
 <!-- ...existing code... -->
+ <br>
+ <br>
+ <hr>
+   <br>
+        <hr>
+        <h3 id="apartado16">CAROUSEL</h3>
+        <!-- cpon estas variables se podria cambviar (si cargamos archivos ) -->
+        <style>
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    background-color: white; /* $carousel-control-color */
+                    width: 15%; /* $carousel-control-width */
+                    opacity: 0.5; /* $carousel-control-opacity */
+                    transition: opacity 0.15s ease; /* $carousel-control-transition */
+                }
+
+                .carousel-control-prev-icon:hover,
+                .carousel-control-next-icon:hover {
+                    opacity: 0.9; /* $carousel-control-hover-opacity */
+                }
+        </style>
+        <div id="ejemplo-carousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- clase para contenedor, carousel-inner -->
+             <!-- Primera parte, las imagenes -->
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/vegamedia01.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/vegamedia02.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/vegamedia03.jpg" alt="" class="d-block w-100">
+                </div>
+             </div>
+
+             <!-- Segunda parte, los controles -->
+             <button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+             </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+             </button>
+
+             <!-- Indicadores -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2" ></button>
+              </div>
+        </div>
+
+          <br>
+        <hr>
+        <h3 id="apartado17">MODALES</h3>
+        <!-- Modal Fade -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFade">
+            Abrir Modal Fade
+        </button>
+        <div class="modal fade" id="modalFade" tabindex="-1" aria-labelledby="modalFadeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFadeLabel">Modal Fade</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Contenido del modal fade.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Centered -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCentered">
+            Abrir Modal Centrado
+        </button>
+        <div class="modal fade" id="modalCentered" tabindex="-1" aria-labelledby="modalCenteredLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCenteredLabel">Modal Centrado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Contenido del modal centrado.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Scrollable -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalScrollable">
+            Abrir Modal Scrollable
+        </button>
+        <div class="modal fade" id="modalScrollable" tabindex="-1" aria-labelledby="modalScrollableLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalScrollableLabel">Modal Scrollable</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Contenido del modal con scroll. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio autem nisi debitis, reprehenderit, magnam eveniet quasi, laborum facere maiores beatae aliquid delectus voluptatem dolor! Quam eaque molestiae veniam aut at?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptas aspernatur dolores, ipsam ex voluptatem error minus non commodi excepturi est dignissimos laudantium amet, facilis unde tempora. Velit, perferendis porro!
+                        Necessitatibus alias iste, beatae aspernatur est veniam atque hic consequatur modi, rem cupiditate, magnam a placeat vero! Commodi libero cumque, earum minus totam nostrum et optio nemo quis culpa alias!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
