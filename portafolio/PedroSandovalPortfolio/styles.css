@@ -91,7 +91,13 @@ nav{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+.centrarAltura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
 .texto{
     font-size: 1.05em;
     font-weight: 400;
