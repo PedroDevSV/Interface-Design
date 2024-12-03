@@ -1,34 +1,45 @@
 body{
     font-family: "Exo 2",sans-serif;
     font-size: 12pt;
-   
+    
 }
-.cuerpo{
-    background-image: url('images/niños.jpg');
+
+nav{
+    background-color:white;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+.cuerpoIndex,.cuerpoEtapas{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
     /* Filtro oscuro */
     background-blend-mode: darken;
-    /* height: 100vh; */
+    background-attachment: fixed;
+
 }
-nav{
-    background-color:white;
-    font-weight: 600;
-    font-size: 1.1em;
+.cuerpoIndex{
+    background-image: url('images/vegamedia01.jpg');
 }
 
+.cuerpoEtapas{
+    background-image: url('images/niños.jpg');
+}
 footer{
     background-color: black;
     color: white; 
     padding: 10px ;
-    width: 100%;
-    height: 15vh;
+
+}
+
+footer i{
+    font-size: 1.4em;
+    
 }
 
 .logoLetra{
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: #9dbe15;
     border-bottom:1.5px solid #9dbe15;
     transition: 0.5s;
@@ -70,7 +81,7 @@ footer{
    
 }
 
-.videoContainer{
+.infoContainer{
     background-color: white;
     border-radius: 4px;
     padding: 10px;

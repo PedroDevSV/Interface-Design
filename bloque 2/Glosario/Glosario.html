@@ -1056,6 +1056,62 @@
 
 
         <h2 id="apartado11">Alerts</h2>
+        <br>
+        <br>
+        <h2>Primeros alerts basicos</h2>
+        <br>
+        <div class="alert alert-success">
+            <b>Succes!!</b>Este cuadro de alerta indica accion exitosa
+        </div>
+        <div class="alert alert-info">
+            <b>Info </b>Este cuadro de alerta indica accion neutra
+        </div>
+        <div class="alert alert-warning">
+            <b>Warning </b>Este cuadro de alerta indica accion warning
+        </div>
+        <div class="alert alert-danger">
+            <b>Danger </b>Este cuadro de alerta indica accion peligrosa
+        </div>
+        <div class="alert alert-primary">
+            <b>Primary </b>Este cuadro de alerta primary
+        </div>
+         <div class="alert alert-secondary">
+            <b>Secondary </b>Este cuadro de alerta secondary
+        </div>
+         <div class="alert alert-light border-dark">
+            <b>Light con border-dark </b>Este cuadro de alerta light
+        </div>
+         <div class="alert alert-dark">
+            <b>dArk </b>Este cuadro de alerta dark
+        </div>
+        <br>
+         <h3>Con enlace</h3>
+        <br>
+        <div class="alert alert-warning">
+            <b>Warning </b>Este cuadro de alerta indica accion warning
+            <a href="#" class="alert-link">Pincha aqui para saber más</a>
+        </div>
+        <div class="alert alert-danger">
+            <b>Danger </b>Este cuadro de alerta indica accion peligrosa
+            <a href="#" class="alert-link">Pincha aqui para saber más</a>
+        </div>
+
+        <br>
+        <h3>Con cierre</h3>
+        <br>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <b>Hecho </b>Este cuadro de alerta indica accion 
+            <b>Cierra en la x</b>
+        </div>
+         <h4>efecto atenuación</h4>
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <b>Hecho </b>Este cuadro de alerta indica accion 
+            <b>Cierra en la x</b>
+        </div>
+
+        <br>
         <div class="code-container">
             <pre><code>&lt;div class="alert alert-success"&gt;
 &lt;b&gt;Succes!!&lt;/b&gt;Este cuadro de alerta indica accion exitosa
@@ -1086,6 +1142,17 @@
         <hr>
 
         <h2 id="apartado12">Insignias / Badges</h2>
+                <span>para agregar información adicional contenido</span>
+
+        <br>
+        <h4>Encabezado h4 <span class="badge bg-secondary">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-success">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-danger">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-info text-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge bg-warning text-dark">Warning text dark</span></h4>
+
+        <br>
         <div class="code-container">
             <pre><code>&lt;h4&gt;Encabezado h4 &lt;span class="badge bg-secondary"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
 &lt;h4&gt;Encabezado h4 &lt;span class="badge bg-success"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
@@ -1096,8 +1163,89 @@
             <button onclick="copyCode(this)">Copiar código</button>
         </div>
         <hr>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-success">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-danger">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-info text-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-dark">Etiqueta</span></h4>
+        <h4>Encabezado h4 <span class="badge rounded-pill bg-warning text-dark">Warning text dark</span></h4>
+        <div class="code-container"></div>
+            <pre><code>&lt;h4&gt;Encabezado h4 &lt;span class="badge rounded-pill bg-success"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+    &lt;h4&gt;Encabezado h4 &lt;span class="badge rounded-pill bg-danger"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+    &lt;h4&gt;Encabezado h4 &lt;span class="badge rounded-pill bg-info text-dark"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+    &lt;h4&gt;Encabezado h4 &lt;span class="badge rounded-pill bg-dark"&gt;Etiqueta&lt;/span&gt;&lt;/h4&gt;
+    &lt;h4&gt;Encabezado h4 &lt;span class="badge rounded-pill bg-warning text-dark"&gt;Warning text dark&lt;/span&gt;&lt;/h4&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+
+        <br>
+        <h4>Dentro de boton</h4>
+        <button type="button" class="btn btn-outline-secondary text-dark">
+            Notificaciones <span class="badge bg-danger">8</span>
+        </button>
+        <button type="button" class="btn btn-primary">
+            Notificaciones <span class="badge bg-light text-dark">8</span>
+        </button>
+
+        <br>
+        <hr>
+        <h4>Esquina</h4>
+        <span>sin el position-relative no funciona</span>
+        <button type="button" class="btn btn-outline-secondary text-dark position-relative me-3">
+            Notificaciones <span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">+99</span>
+        </button>
+        <button type="button" class="btn btn-primary position-relative">
+            Notificaciones <span class="rounded-circle p-2 bg-danger position-absolute top-0 start-100 translate-middle"></span>
+        </button>
+
+        <div class="code-container">
+            <pre><code>&lt;h4&gt;Dentro de boton&lt;/h4&gt;
+        &lt;button type="button" class="btn btn-outline-secondary text-dark"&gt;
+            Notificaciones &lt;span class="badge bg-danger"&gt;8&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;
+            Notificaciones &lt;span class="badge bg-light text-dark"&gt;8&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;br&gt;
+        &lt;hr&gt;
+        &lt;h4&gt;Esquina&lt;/h4&gt;
+        &lt;span&gt;sin el position-relative no funciona&lt;/span&gt;
+        &lt;button type="button" class="btn btn-outline-secondary text-dark position-relative me-3"&gt;
+            Notificaciones &lt;span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"&gt;+99&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary position-relative"&gt;
+            Notificaciones &lt;span class="rounded-circle p-2 bg-danger position-absolute top-0 start-100 translate-middle"&gt;&lt;/span&gt;
+        &lt;/button&gt;</code></pre>
+            <button onclick="copyCode(this)">Copiar código</button>
+        </div>
+
+        <hr>
 
         <h2 id="apartado13">Cards</h2>
+                <h3>Colores de fondo</h3>
+        <div class="card mb-3 bg-primary text-white">
+            <div class="card-body">Card body</div>
+        </div>
+          <div class="card mb-3 bg-secondary text-dark">
+            <div class="card-body">Card body</div>
+        </div>
+
+          <div class="card mb-3 bg-dark text-white">
+            <div class="card-body">Card body</div>
+        </div>
+
+          <div class="card mb-3 bg-warning text-white">
+            <div class="card-body">Card body</div>
+        </div>
+
+          <div class="card mb-3 bg-danger text-white">
+            <div class="card-body">Card body</div>
+        </div>
+
+        <div class="card mb-3 bg-light text-dark">
+            <div class="card-body">Card body</div>
+        </div>
+
         <div class="code-container">
             <pre><code>&lt;div class="card mb-3 bg-primary text-white"&gt;
 &lt;div class="card-body"&gt;Card body&lt;/div&gt;
@@ -1133,9 +1281,125 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, hic nesciunt. A
 &lt;/div&gt;</code></pre>
             <button onclick="copyCode(this)">Copiar código</button>
         </div>
+         <div class="row">
+            <h4>Plegable simple con boton</h4>
+            <p>Haz click par más info</p>
+            <button type="button" class="col-2 btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable1">Plegable enlace</button>
+            <div id="plegable1" class="collapse">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, hic nesciunt. Assumenda quasi laborum repudiandae cumque necessitatibus excepturi inventore magni tempora accusamus asperiores quas neque, aliquid ratione est eos corporis.
+            </div>
+        </div>
+        <br>
+         <div class="row">
+            <h4>Plegable simple con enlace</h4>
+            <p>Haz click en enlace par más info</p>
+            <span>no hace falta target con enlace</span>
+            <a href="#plegable2"   class="col-2 btn btn-primary" data-bs-toggle="collapse"">Plegable enlace</a>
+           
+            <div id="plegable2" class="collapse">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, hic nesciunt. Assumenda quasi laborum repudiandae cumque necessitatibus excepturi inventore magni tempora accusamus asperiores quas neque, aliquid ratione est eos corporis.
+            </div>
+        </div>
+
+         <br>
+         <br>
+         <div class="row">
+            <h4>Plegable simple con enlace</h4>
+            <p>Haz click en enlace par más info</p>
+            <span>no hace falta target con enlace</span>
+            <a href="#plegable2"   class="col-2 btn btn-primary" data-bs-toggle="collapse"">Plegable enlace</a>
+           
+            <div id="plegable2" class="collapse">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, hic nesciunt. Assumenda quasi laborum repudiandae cumque necessitatibus excepturi inventore magni tempora accusamus asperiores quas neque, aliquid ratione est eos corporis.
+            </div>
+        </div>
+
+        <br>
         <hr>
 
         <h2 id="apartado15">Acordeon</h2>
+         <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+               
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                     <div class="accordion-body">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Accordion Item #4
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Accordion Item #5
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="code-container">
             <pre><code>&lt;div class="accordion" id="accordionExample"&gt;
 &lt;div class="accordion-item"&gt;
