@@ -103,7 +103,7 @@ video{
 
 #acordeon {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    color: #9dbe15;
+    color: #657a0e;
     border-bottom: 1.5px solid #9dbe15;
     font-size: 0.7em;
     transition-duration: 0.7s ease;
@@ -115,11 +115,17 @@ video{
     border-radius: 4px;
 }
 
-.card{
+.card,.ciclos{
     border: 1px solid rgb(235, 235, 235);
     background-color: rgb(245, 245, 245);
+    border-radius: 4px;
 }
-
+.ciclos{
+    border-bottom: 1px solid #9dbe15;
+}
+.color2{
+    color: #657a0e;
+}
 .bordes{
     border-radius: 4px;
 }
