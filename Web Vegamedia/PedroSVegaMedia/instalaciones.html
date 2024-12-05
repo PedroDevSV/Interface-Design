@@ -53,64 +53,70 @@
         </nav>
 
         <div class="container">
-            <div class="infoContainer row justify-content-between mt-3">
-                <div class="col-12 col-md-10 col-lg-7  ms-md-5 mt-md-3 mt-lg-0 ms-lg-0 ">
-                    <video class="videoIndex w-100 mt-lg-3 mb-md-1"  autoplay muted loop>
-                        <source src="images/presentacionrecorte.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <div id="ejemplo-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- <iframe id="carouselVideo" class="" width="100%" height="500" src="https://www.youtube.com/embed/qjP1wgFfyi0?si=ZtSF8BMqMwCEnZ3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                           <video class="w-100 mt-lg-3 mb-md-1"  autoplay muted loop>
+                                <source src="images/presentacionrecorte.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/patio.jpg" alt="" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/primaria.jpg" alt="" class="d-block w-100 img-fluid">
+                        </div>
+                    </div>
 
-                <div class="col-12 col-md-10 col-lg-4 me-5 ms-md-5 ms-lg-0">
-                    <h1 class="mt-4 text-success mb-3">Presentación</h1>
-                    
-                    <div class="centrarAltura mt-1">
-                        <p >El CES Vega Media un centro concertado donde la enseñanza es totalmente <b>gratuita</b>, gestionado por una <u>cooperativa</u> de profesores con vocación por la formación..</p>
-                        <p>Somos un centro <b>dinámico</b>, siempre buscando nuestro espacio, tenemos nuestra propia identidad que nos hace diferentes.</p>
-                    </div>
-                </div>
-            </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
 
-    
-            <div class="row mt-3">
-                <div class="accordion infoContainer">
-                    <div class="accordion-item  border-white">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed " id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"  aria-controls="collapseOne">
-                                Como cooperativa
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Hemos crecido y seguimos creciendo por nuestro Proyecto Cooperativo, dónde las personas y una fuerte apuesta por un proyecto de calidad, son los elementos fundamentales de nuestra organización.
-                            </div>
-                        </div>
+                 
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1" ></button>
+                        <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2" ></button>
                     </div>
-                    <div class="accordion-item  border-white">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Experiencia
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Aquí se mezclan la experiencia, madurez y estabilidad que aportan los socios más antiguos, con la frescura y la ilusión que nos traen las últimas generaciones, pero todos con un denominador común: “Seguir trabajando por nuestro Centro, por una mayor calidad en nuestros servicios, siendo flexibles a los cambios constantes de la sociedad para adaptarnos a ellos en las mejores condiciones, y aprovechando la creatividad y la iniciativa que sólo las personas pueden aportar”.
-                            </div>
-                        </div>
+            </div> 
+
+            <!-- Parte de portafolio -->
+             <div class="infoContainer">
+                <h1 class="mt-1 text-success text-center mb-3">Nuestras instalaciones</h1>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <img src="images/ajedrez.jpg" alt="">
                     </div>
-                    <div class="accordion-item border-white">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Organización
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                El órgano responsable de la alta gestión de la cooperativa, es el Consejo Rector que está formado por siete personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.
-                            </div>
-                        </div>
+                    <div class="col-6">
+                        <img src="images/basica.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/daw.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/enfermeria.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/futbol.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/eso.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/" alt="">
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
     <footer class="footer mt-4">
         <div class="container p-2">
