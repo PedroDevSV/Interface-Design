@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbar_plegable">
                     <ul class="navbar-nav text-center ms-4">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-enlaces nav-link active"><i class="bi bi-images"></i> Inicio</a>
+                            <a href="index.html" class="nav-enlaces nav-link"><i class="bi bi-images"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a href="etapas.html" class="nav-enlaces nav-link"><i class="bi bi-person-circle"></i> Etapas</a>
@@ -42,7 +42,7 @@
                             <a href="servicios.html" class="nav-enlaces nav-link"><i class="bi bi-gear-fill"></i> Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contacto.html" class="nav-enlaces nav-link"><i class="bi bi-telephone-fill"></i> Contacto</a>
+                            <a href="contacto.html" class="nav-enlaces nav-link active"><i class="bi bi-telephone-fill"></i> Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -53,66 +53,52 @@
         </nav>
 
         <div class="container">
-            <div class="infoContainer row justify-content-between mt-3">
-                <div class="col-12 col-md-10 col-lg-7  ms-md-5 mt-md-3 mt-lg-0 ms-lg-0 ">
-                    <video class="videoIndex w-100 mt-lg-3 mb-md-1"  autoplay muted loop>
-                        <source src="images/presentacionrecorte.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-                <div class="col-12 col-md-10 col-lg-4 me-5 ms-md-5 ms-lg-0">
-                    <h1 class="mt-4 text-success mb-3">Presentación</h1>
-                    
-                    <div class="centrarAltura mt-1">
-                        <p >El CES Vega Media un centro concertado donde la enseñanza es totalmente <b>gratuita</b>, gestionado por una <u>cooperativa</u> de profesores con vocación por la formación..</p>
-                        <p>Somos un centro <b>dinámico</b>, siempre buscando nuestro espacio, tenemos nuestra propia identidad que nos hace diferentes.</p>
-                    </div>
-                </div>
+            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                <strong>¡Nuestros servicios!</strong> Disfruta de nuestros saludables productos en la cantina
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+            <div class="infoContainer">
+                <h1 class="mt-1 text-success text-center mb-3">Contacto</h1>
+                <div class="row justify-content-center mt-4">
+                    <div class="ciclos col-12 col-md-5">
+                       <h3 id="colorVerde" class=" text-center">Información de Contacto</h3>
+                       <div class="centrarAltura mt-3">
+                            <h5 class="mb-4">Centro Concertado CES Vega Media</h5>
+                            <p class="ms-1 mt-2 text-start"><i class="bi bi-send"></i> vegamedia@ces-vegamedia.es</p>
+                            <p class="ms-2 mt-2 "><i class="bi bi-telephone-fill"></i>  968 620 913 </p>
+                            <p class="ms-2 mt-2"><i class="bi bi-house-fill"></i>Ctra. De Mula, 37 – 30560 Alguazas – Murcia</p>
+                       </div>
+                    </div>
 
-    
-            <div class="row mt-3">
-                <div class="accordion infoContainer">
-                    <div class="accordion-item  border-white">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed " id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"  aria-controls="collapseOne">
-                                Como cooperativa
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Hemos crecido y seguimos creciendo por nuestro Proyecto Cooperativo, dónde las personas y una fuerte apuesta por un proyecto de calidad, son los elementos fundamentales de nuestra organización.
+                    <div class="ciclos col-12 col-md-5 offset-md-1 mt-5 mt-md-0">
+                        <h3 id="colorVerde" class=" text-center">Envíanos un mensaje</h3>
+                        <div class="col-12">
+                            <div class="form-floating mb-1">
+                                <input type="text" name="" id="correo" class="form-control" placeholder="">
+                                <label for="correo">Correo electrónico</label>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item  border-white">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Experiencia
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Aquí se mezclan la experiencia, madurez y estabilidad que aportan los socios más antiguos, con la frescura y la ilusión que nos traen las últimas generaciones, pero todos con un denominador común: “Seguir trabajando por nuestro Centro, por una mayor calidad en nuestros servicios, siendo flexibles a los cambios constantes de la sociedad para adaptarnos a ellos en las mejores condiciones, y aprovechando la creatividad y la iniciativa que sólo las personas pueden aportar”.
-                            </div>
+                        <div class="col-12 mt-2">
+                            
+                            <textarea class="form-control" id="comment" rows="5" placeholder="Pregúntanos lo que necesites:"></textarea>
                         </div>
-                    </div>
-                    <div class="accordion-item border-white">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" id="acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Organización
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                El órgano responsable de la alta gestión de la cooperativa, es el Consejo Rector que está formado por siete personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.
-                            </div>
+                        <div class="col-12 text-center mt-2">
+                            <button class="btn btn-success">Enviar  Mensaje</button>
                         </div>
                     </div>
                 </div>
             </div>
+       </div>
+                
+
+
+
+
+                </div>
+
+             </div>
         </div>
-   <footer class="footer mt-4">
+    <footer class="footer mt-4">
         <div class="container p-2">
             <div class="row text-center justify-content-between">
                 <div class="d-none d-lg-grid col-lg-4">

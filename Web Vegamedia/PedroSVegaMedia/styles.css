@@ -117,7 +117,7 @@ footer i{
 
 .card,.ciclos{
     border: 1px solid rgb(235, 235, 235);
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(250, 250, 250);
     border-radius: 4px;
 }
 .ciclos{
@@ -133,4 +133,21 @@ footer i{
 .carousel-item img, .carousel-item video {
     max-height: 600px;
     object-fit: cover;
+}
+
+.collage img {
+    max-height: 228px;
+    /* max-width: 430px; */
+    object-fit: cover;
+}
+
+
+.escalarPoco {
+    transition: 0.7s ease;
+
+}
+
+.escalarPoco:hover{
+    transform: scale(1.03);
+    border-radius: 4px;
 }
