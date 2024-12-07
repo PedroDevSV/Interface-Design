@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,25 +52,25 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-                <strong>¡Nuestros servicios!</strong> Disfruta de nuestros saludables productos en la cantina
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="infoContainer">
-                <h1 class="mt-1 text-success text-center mb-3">Contacto</h1>
-                <div class="row justify-content-center mt-4">
+        <div class="container ">
+            
+            <div class="infoContainer pt-lg-5 pb-lg-5 mt-5 ">
+                <div class="row justify-content-center">
+                    <img src="images/logoVM_blanco.jpg" class="img-fluid mt-0 d-none d-md-grid col-md-3 col-lg-2">
+                    <h1 class="col-9 text-center text-md-start col-md-4 ms-md-5 mt-md-5 pt-md-4 text-success">Contacto</h1>
+                </div>
+                <div class="row justify-content-center mt-3 mt-md-5 ">
                     <div class="ciclos col-12 col-md-5">
-                       <h3 id="colorVerde" class=" text-center">Información de Contacto</h3>
-                       <div class="centrarAltura mt-3">
-                            <h5 class="mb-4">Centro Concertado CES Vega Media</h5>
+                       <h3 id="colorVerde" class="text-center">Información</h3>
+                       <div class="centrarAltura mt-4">
+                            <h5 class="mb-4 d-none d-lg-grid">Centro Concertado CES Vega Media</h5>
                             <p class="ms-1 mt-2 text-start"><i class="bi bi-send"></i> vegamedia@ces-vegamedia.es</p>
                             <p class="ms-2 mt-2 "><i class="bi bi-telephone-fill"></i>  968 620 913 </p>
                             <p class="ms-2 mt-2"><i class="bi bi-house-fill"></i>Ctra. De Mula, 37 – 30560 Alguazas – Murcia</p>
                        </div>
                     </div>
 
-                    <div class="ciclos col-12 col-md-5 offset-md-1 mt-5 mt-md-0">
+                    <div class="ciclos col-12 col-md-5 offset-md-1 mt-3 mt-md-0">
                         <h3 id="colorVerde" class=" text-center">Envíanos un mensaje</h3>
                         <div class="col-12">
                             <div class="form-floating mb-1">
@@ -82,7 +82,7 @@
                             
                             <textarea class="form-control" id="comment" rows="5" placeholder="Pregúntanos lo que necesites:"></textarea>
                         </div>
-                        <div class="col-12 text-center mt-2">
+                        <div class="col-12 text-center mt-2 mb-2">
                             <button class="btn btn-success">Enviar  Mensaje</button>
                         </div>
                     </div>
@@ -91,13 +91,22 @@
        </div>
                 
 
+                <style>
+                    body {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 100vh;
+                    }
+                    .container {
+                        flex: 1;
+                    }
+                    .footer {
+                        position: relative;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                </style>
 
-
-
-                </div>
-
-             </div>
-        </div>
     <footer class="footer mt-4">
         <div class="container p-2">
             <div class="row text-center justify-content-between">

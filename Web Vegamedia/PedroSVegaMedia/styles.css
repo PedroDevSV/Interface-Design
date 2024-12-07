@@ -9,6 +9,7 @@ nav{
     font-weight: 600;
     font-size: 1.05em;
 }
+
 .cuerpoIndex,.cuerpoEtapas{
     background-size: cover;
     background-position: center;
@@ -94,12 +95,6 @@ footer i{
     height: auto;
 }
 
-/* Para quitar efecto azul al abrir acordeón */
-.accordion-button:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #fff;
-    box-shadow: none;
-}
 
 #acordeon {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -137,7 +132,6 @@ footer i{
 
 .collage img {
     max-height: 228px;
-    /* max-width: 430px; */
     object-fit: cover;
 }
 
