@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Fade In</title>
+    <style>
+        .fade-in{
+            opacity: 0;
+            animation: fadeIn 5s forwards;
+        }
+
+        @keyframes fadeIn{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+       <h1>animacion fade in</h1>
+        <img src="creper.webp" width="400px" class="fade-in" alt="">
+    </div>
+</body>
+</html>
