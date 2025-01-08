@@ -10,14 +10,15 @@ body,.nav,.menu {
 }
 
 .nav {
-    position:fixed;
+    position:relative;
     background-color: #fff;
-    padding: 20px;
-    transition: 0.5s;
+    padding: 15px;
+    transition: 1.0s ease;
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
-    width: 40%;
+    width: 38%;
+    font-size: 13pt;
 }
 
 
@@ -36,4 +37,16 @@ body,.nav,.menu {
 
 .menu li a:hover {
     color: #161919;
+}
+
+.titulos{
+    color: rgb(226, 226, 226);
+    font-family: rock;
+    font-size: 2em;
+}
+
+.seccion{
+    background-color: rgb(17, 17, 17);
+    padding: 10px;
+    border-radius: 40px;
 }
