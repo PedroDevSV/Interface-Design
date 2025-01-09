@@ -1,6 +1,19 @@
 body{
     font-size: 11pt;
     background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+     min-height: 100vh;
+}
+
+.container {
+      flex: 1;
+ }
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 body,.nav,.menu {
@@ -12,15 +25,25 @@ body,.nav,.menu {
 .nav {
     position:relative;
     background-color: #fff;
-    padding: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     transition: 1.0s ease;
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
     width: 38%;
-    font-size: 13pt;
+    font-size: 12pt;
+    font-family: 'Roboto';
 }
 
+.navMovil{
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+}
 
 .menu li {
     list-style: none;
@@ -41,12 +64,31 @@ body,.nav,.menu {
 
 .titulos{
     color: rgb(226, 226, 226);
-    font-family: rock;
-    font-size: 2em;
+    font-family: 'Lobster';
+    font-size: 2.5em;
 }
 
 .seccion{
     background-color: rgb(17, 17, 17);
     padding: 10px;
     border-radius: 40px;
+    padding-bottom: 25px;
+}
+
+.texto{ 
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 12.5pt;
+    padding: 35px;
+    border-radius: 30px;
+    font-family: 'Roboto';
+}
+.subtitulos{
+    font-family: 'Roboto';
+    color: white;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
