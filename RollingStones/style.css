@@ -37,6 +37,12 @@ body,.nav,.menu {
     font-family: 'Roboto';
 }
 
+li{
+    transition: 0.5s ease;
+}
+li:hover {
+    transform: scale(1.2);
+}
 .navMovil{
     background-color: #fff;
     padding: 10px;
@@ -78,7 +84,7 @@ body,.nav,.menu {
 .texto{ 
     background-color: rgb(17, 17, 17);
     color: white;
-    font-size: 12.5pt;
+    font-size: 14pt;
     padding: 35px;
     border-radius: 30px;
     font-family: 'Roboto';
@@ -86,9 +92,43 @@ body,.nav,.menu {
 .subtitulos{
     font-family: 'Roboto';
     color: white;
+    font-size: 2.3em;
 }
 .centrar{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+/* efecto reproducir */
+ .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 2rem;
+    color: rgb(240, 21, 21);
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius: 80px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+}
+.image-container:hover .play-button {
+    display: block;
+}
+.image-container img {
+    transition: 0.8s ease;
+}
+.image-container img:hover {
+    transform: scale(1.01);
+   
 }
