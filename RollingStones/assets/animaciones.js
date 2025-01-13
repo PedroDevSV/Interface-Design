@@ -4,7 +4,7 @@ window.addEventListener('scroll', function () {
     if (window.scrollY > 120) {
         nav.style.position = 'fixed';
         nav.style.top = '0';
-        nav.style.width = '28%';
+        nav.style.width = '34%';
 
         nav.style.transform = 'scale(0.8)';
         nav.style.marginTop = '0px';
