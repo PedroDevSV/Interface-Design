@@ -4,7 +4,7 @@ window.addEventListener('scroll', function () {
     if (window.scrollY > 120) {
         nav.style.position = 'fixed';
         nav.style.top = '0';
-        nav.style.width = '34%';
+        nav.style.width = '37%';
 
         nav.style.transform = 'scale(0.8)';
         nav.style.marginTop = '0px';
@@ -13,7 +13,7 @@ window.addEventListener('scroll', function () {
         nav.style.position = 'relative';
         nav.style.transform = 'scale(1)';
         nav.style.marginTop = '0';
-        nav.style.width = '38%';
+        nav.style.width = '41%';
       
     }
 });
@@ -29,6 +29,14 @@ function reproducirAudio(imageId, buttonId, audioId) {
 
     // click en el botón de reproducción
     playButton.click();
+    // Añadir evento de hover a la imagen para cambiar la opacidad
+    image.addEventListener('mouseover', function () {
+        image.style.opacity = '0.5';
+    });
+
+    image.addEventListener('mouseout', function () {
+        image.style.opacity = '1';
+    });
 }
 
 
