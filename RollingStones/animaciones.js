@@ -4,15 +4,16 @@ window.addEventListener('scroll', function () {
     if (window.scrollY > 120) {
         nav.style.position = 'fixed';
         nav.style.top = '0';
-        nav.style.width = '27%';
-        nav.style.marginTop = '10px';
-        //sobreponer nav 
-        nav.style.zIndex = '1000'; 
+        nav.style.width = '35%';
+        nav.style.transform = 'scale(0.7)';
+        nav.style.marginTop = '0px';
+
     } else {
         nav.style.position = 'relative';
+        nav.style.transform = 'scale(1)';
         nav.style.marginTop = '0';
-        nav.style.width = '40%';
-        nav.style.zIndex = '1'; // Añadir esta línea
+        nav.style.width = '38%';
+
     }
 });
 
@@ -27,14 +28,6 @@ function reproducirAudio(imageId, buttonId, audioId) {
 
     // click en el botón de reproducción
     playButton.click();
-    // Añadir evento de hover a la imagen para cambiar la opacidad
-    image.addEventListener('mouseover', function () {
-        image.style.opacity = '0.5';
-    });
-
-    image.addEventListener('mouseout', function () {
-        image.style.opacity = '1';
-    });
 }
 
 
