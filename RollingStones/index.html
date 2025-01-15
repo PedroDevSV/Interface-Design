@@ -52,7 +52,12 @@
            <div class="col-9 col-md-4 image-container">
                 <img src="assets/images/collage2.jpg" alt="" class="img-fluid rounded" id="collage2">
                 <button class="play-button" id="play-button-collage2"><i class="bi bi-play-fill"></i></button>
-                 <audio id="audio" src="assets/audio/recorteBlackDog.wav"></audio>
+            
+                <audio id="audio" >
+                    <source src="assets/audio/recorteBlackDog.wav" type="audio/wav">
+                    <source src="assets/audio/recorteBlackDog.mp3" type="audio/mp3">
+                    <source src="assets/audio/recorteBlackDog.ogg" type="audio/ogg">
+                </audio>
             </div>
             <div class="col-8 mt-4 mt-md-0 centrar">
                 <h3 class="subtitulos col-9 text-center">“My guitar is not a thing, It is an extension of myself. It is who I am."</h3>
@@ -63,8 +68,8 @@
         </div>
        
         <div class="row justify-content-center mt-5 ">
-            <div class="col-12 col-lg-6 mt-lg-3 ">
-                <h5 class="titulos text-center mb-lg-2">Como forma de vida</h5>
+            <div class="col-12 col-lg-6 mt-lg-3 centrar">
+                <h5 class="titulos text-center mb-lg-2 ">Como forma de vida</h5>
                 <p class="texto">La guitarra, un instrumento universal y expresivo, es más que un objeto, es una extensión del ser para muchos guitarristas.<br><br> Rolling Stone ha actualizado su lista de los mejores guitarristas. La lista no solo incluye a famosos dioses de la guitarra como Jimmy Page, sino también a músicos de diversos estilos, reflejando la rica evolución de la guitarra a lo largo del tiempo.</p>
             </div>
             <div class="col-11 order-1 col-lg-6 mt-3 mt-lg-5">
@@ -78,125 +83,37 @@
                 <h1 class="titulos d-none d-md-grid">Escucha nuestras playlist en las plataformas</h1>
                 <h3 class="titulos d-grid d-md-none">Nuestras playlist</h3>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="card">
-                        <img src="assets/images/spotify.png" class="card-img-top" alt="Spotify">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Spotify</h5>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#spotifyModal">
-                                Ver más
-                            </button>
-                        </div>
+            <div class="row justify-content-between">
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="card bg-transparent border-0 ">
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="assets/images/Spotify.png" class="card-img-top agrandar" alt="Spotify">
+                        </a>
+                   
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="card">
-                        <img src="assets/images/youtube.png" class="card-img-top" alt="YouTube">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">YouTube</h5>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#youtubeModal">
-                                Ver más
-                            </button>
-                        </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="assets/images/youtube.png" class="card-img-top" alt="YouTube">
+                        </a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="card">
-                        <img src="assets/images/amazonmusic.png" class="card-img-top" alt="Amazon Music">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Amazon Music</h5>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#amazonMusicModal">
-                                Ver más
-                            </button>
-                        </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <a href="https://music.amazon.com" target="_blank">
+                            <img src="assets/images/amazonmusic.png" class="card-img-top" alt="Amazon Music">
+                        </a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="card">
-                        <img src="assets/images/applemusic.png" class="card-img-top" alt="Apple Music">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Apple Music</h5>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appleMusicModal">
-                                Ver más
-                            </button>
-                        </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <a href="https://music.apple.com" target="_blank">
+                            <img src="assets/images/applemusic.png" class="card-img-top" alt="Apple Music">
+                        </a>
                     </div>
                 </div>
 
-                <!-- Modals -->
-                <div class="modal fade" id="spotifyModal" tabindex="-1" aria-labelledby="spotifyModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="spotifyModalLabel">Spotify</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Escucha nuestras playlists en Spotify.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <a href="https://www.spotify.com" class="btn btn-primary">Ir a Spotify</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="youtubeModalLabel">YouTube</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Escucha nuestras playlists en YouTube.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <a href="https://www.youtube.com" class="btn btn-primary">Ir a YouTube</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="amazonMusicModal" tabindex="-1" aria-labelledby="amazonMusicModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="amazonMusicModalLabel">Amazon Music</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Escucha nuestras playlists en Amazon Music.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <a href="https://music.amazon.com" class="btn btn-primary">Ir a Amazon Music</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="appleMusicModal" tabindex="-1" aria-labelledby="appleMusicModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="appleMusicModalLabel">Apple Music</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Escucha nuestras playlists en Apple Music.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <a href="https://music.apple.com" class="btn btn-primary">Ir a Apple Music</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
           
         </div>
     </div>

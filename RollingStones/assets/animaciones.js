@@ -6,11 +6,13 @@ window.addEventListener('scroll', function () {
         nav.style.top = '0';
         nav.style.width = '27%';
         nav.style.marginTop = '10px';
+        nav.style.fontSize = '0.9em';
         //sobreponer nav 
         nav.style.zIndex = '1000'; 
     } else {
         nav.style.position = 'relative';
         nav.style.marginTop = '0';
+        nav.style.fontSize = '12pt';
         nav.style.width = '40%';
         nav.style.zIndex = '1'; // Añadir esta línea
     }
