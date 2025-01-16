@@ -40,7 +40,6 @@ function reproducirAudio(imageId, buttonId, audioId) {
 }
 
 
-
 // LLamada botones de imagenes
 document.getElementById('play-button-collage2').addEventListener('click', function () {
     document.getElementById('audio').play();
@@ -49,3 +48,14 @@ document.getElementById('play-button-collage2').addEventListener('click', functi
 // Ejecutar para collage2
 reproducirAudio('collage2', 'play-button-collage2', 'audio');
 
+
+// Para reproducir audio en hover
+var currentAudio = null;
+
+function playAudio(audioId) {
+    // if (currentAudio && !currentAudio.ended) {
+    //     return; // No reproducir si ya hay un audio reproduciéndose
+    // }
+    currentAudio = document.getElementById(audioId);
+    currentAudio.play();
+}

@@ -147,3 +147,28 @@ li:hover {
     transform: scale(1.1);
     transition: transform 0.8s;
 }
+/* para reproducir */
+.card-hover:hover {
+      cursor: pointer;
+  }
+
+.guitarrist{
+    background-color: #333333;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Roboto';
+}
+
+.tituloGuitarrist{
+    font-family: 'Lobster';
+    font-size: 1.8em;
+}
+
+.agrandarPoco {
+    transition-duration: 0.8s;
+}
+
+.agrandarPoco:hover {
+    transform: scale(1.03);
+    transition: transform 0.8s;
+}
