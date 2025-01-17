@@ -6,32 +6,21 @@ window.addEventListener('scroll', function () {
         nav.style.top = '0';
         nav.style.width = '27%';
         nav.style.marginTop = '10px';
-        nav.style.fontSize = '0.9em';
         //sobreponer nav 
         nav.style.zIndex = '1000'; 
     } else {
         nav.style.position = 'relative';
         nav.style.marginTop = '0';
-        nav.style.fontSize = '12pt';
         nav.style.width = '40%';
         nav.style.zIndex = '1'; // Añadir esta línea
     }
 });
-
-// Para reproducir audio en hover
-var currentAudio = null;
 
 // Función para reproducir el audio de las imagenes 
 function reproducirAudio(imageId, buttonId, audioId) {
     const audio = document.getElementById(audioId);
     const image = document.getElementById(imageId);
     const playButton = document.getElementById(buttonId);
-
-    // Detener el audio actual si hay uno reproduciéndose
-    if (currentAudio && !currentAudio.paused) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
 
     // hover sobre la imagen
     image.dispatchEvent(new Event('mouseover'));
@@ -46,10 +35,8 @@ function reproducirAudio(imageId, buttonId, audioId) {
     image.addEventListener('mouseout', function () {
         image.style.opacity = '1';
     });
-
-    // Asignar el nuevo audio a currentAudio
-    currentAudio = audio;
 }
+
 
 
 // LLamada botones de imagenes
@@ -60,14 +47,3 @@ document.getElementById('play-button-collage2').addEventListener('click', functi
 // Ejecutar para collage2
 reproducirAudio('collage2', 'play-button-collage2', 'audio');
 
-
-// Para reproducir audio en hover
-function playAudio(audioId) {
-    // Detener el audio actual si hay uno reproduciéndose
-    if (currentAudio && !currentAudio.paused) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
-    currentAudio = document.getElementById(audioId);
-    currentAudio.play();
-}
