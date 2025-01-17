@@ -162,6 +162,8 @@ li:hover {
 .tituloGuitarrist{
     font-family: 'Lobster';
     font-size: 1.8em;
+    text-shadow: 4px 7px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .agrandarPoco {
@@ -169,6 +171,21 @@ li:hover {
 }
 
 .agrandarPoco:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     transition: transform 0.8s;
+}
+
+.botonGuitarrist{
+    background-color: rgb(160, 9, 9);
+    border: 1px solid rgba(199, 199, 199, 0.267);
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto';
+    transition: 0.3s ease;
+}
+
+.botonGuitarrist:hover {
+    transform: scale(1.1);
+    background-color: black;
+    transition: transform 0.3s, background-color 0.3s;
 }
