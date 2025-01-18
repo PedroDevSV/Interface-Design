@@ -38,6 +38,21 @@ function reproducirAudio(imageId, buttonId, audioId) {
 }
 
 
+// Para reproducir audio en hover
+var currentAudio = null;
+
+function playAudio(audioId) {
+    // if (currentAudio && !currentAudio.ended) {
+    //     return; // No reproducir si ya hay un audio reproduciéndose
+    // }
+    // Detener el audio actual si hay uno reproduciéndose
+    if (currentAudio && !currentAudio.paused) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+    }
+    currentAudio = document.getElementById(audioId);
+    currentAudio.play();
+}
 
 // LLamada botones de imagenes
 document.getElementById('play-button-collage2').addEventListener('click', function () {
