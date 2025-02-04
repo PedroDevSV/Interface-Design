@@ -6,6 +6,8 @@ window.addEventListener('scroll', function () {
         nav.style.top = '0';
         nav.style.width = '27%';
         nav.style.marginTop = '10px';
+        nav.style.fontSize='0.9em';
+        nav.style.transition='0.5s ease';
         //sobreponer nav 
         nav.style.zIndex = '1000'; 
     } else {
@@ -13,6 +15,7 @@ window.addEventListener('scroll', function () {
         nav.style.marginTop = '0';
         nav.style.width = '40%';
         nav.style.zIndex = '1'; 
+        nav.style.fontSize = '12pt';
     }
 });
 
@@ -42,7 +45,7 @@ document.getElementById('play-button-collage2').addEventListener('click', functi
 });
 
 // Ejecutar para collage2
-reproducirAudio('collage2', 'play-button-collage2', 'audio');
+// reproducirAudio('collage2', 'play-button-collage2', 'audio');
 
 // Para reproducir audio en hover
 var currentAudio = null;
