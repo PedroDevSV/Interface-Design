@@ -139,6 +139,11 @@ li:hover {
 .redes{
     text-decoration: none;
     color: inherit;
+  
+}
+
+.red{
+    font-size: 2rem;
 }
 
 .agrandar{

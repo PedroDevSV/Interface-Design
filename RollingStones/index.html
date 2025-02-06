@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,41 +20,40 @@
 </head>
 <body>
     <div class="container">
-        <nav class="row justify-content-center ">
+        <nav class="row justify-content-center" role="navigation" aria-label="Main navigation">
             <div class="col-12 col-md-5 mt-2">
-                <img src="assets/images/Rollinglogo.png" alt="" class="img-fluid" >
+                <img src="assets/images/Rollinglogo.png" alt="Logo de Rolling Stone" class="img-fluid">
             </div>
         </nav>
         <div class="row justify-content-center d-none d-lg-flex">
             <div class="nav">
-                <div class="menu">
-                    <li><a href="#" class="text-danger">Inicio</a></li>
-                    <li><a href="guitarristas.html">Guitarristas</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="relacionados.html">Relacionados</a></li>
-                </div>
+                <ul class="menu" role="menubar">
+                    <li role="none"><a href="#" class="text-danger" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="guitarristas.html" role="menuitem">Guitarristas</a></li>
+                    <li role="none"><a href="galeria.html" role="menuitem">Galería</a></li>
+                    <li role="none"><a href="relacionados.html" role="menuitem">Relacionados</a></li>
+                </ul>   
             </div>
         </div>
          <div class="row justify-content-center d-grid d-lg-none mt-2">
             <div class="navMovil">
-                <div class="menu">
-                    <li><a href="#" class="text-danger">home</a></li>
-                    <li><a href="guitarristas.html">Guitarristas</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="relacionados.html">Relacionados</a></li>
-                </div>
+                <ul class="menu" role="menubar">
+                    <li role="none"><a href="#" class="text-danger" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="guitarristas.html" role="menuitem">Guitarristas</a></li>
+                    <li role="none"><a href="galeria.html" role="menuitem">Galería</a></li>
+                    <li role="none"><a href="relacionados.html" role="menuitem">Relacionados</a></li>
+                </ul>
             </div>
         </div>
         <div class="row justify-content-center mt-4 seccion pb-4 ">
             <div class="col-12 text-center mb-2">
                 <h1 class="titulos d-none d-md-grid">Top 10 mejores guitarristas de la historia</h1>
-                <h3 class="titulos d-grid d-md-none">Los mejores guitarristas</h3>
+                <h2 class="titulos d-grid d-md-none">Los mejores guitarristas</h2>
             </div>
            <div class="col-9 col-md-4 image-container">
-                <img src="assets/images/collage2.jpg" alt="" class="img-fluid rounded" id="collage2">
-                <button class="play-button" id="play-button-collage2"><i class="bi bi-play-fill"></i></button>
-            
-                <audio id="audio" >
+                <img src="assets/images/collage2.jpg" title="Variedad de guitarristas en una imagen" alt="Collage de guitarristas famosos" class="img-fluid rounded" id="collage2">
+                <button class="play-button" id="play-button-collage2" aria-label="Reproducir audio"><i class="bi bi-play-fill"></i></button>
+                <audio id="audio">
                     <source src="assets/audio/recorteBlackDog.mp3" type="audio/mp3">
                     <source src="assets/audio/recorteBlackDog.ogg" type="audio/ogg">
                 </audio>
@@ -131,23 +130,23 @@
                    <h6 class="text-center mb-3">Redes sociales</h6>
                     <div class="row justify-content-center">
                         <div class="col-2">
-                            <a href="https://www.instagram.com" class="redes" target="_blank" rel="noopener noreferrer">
-                                <h3><i class="bi bi-instagram"></i></h3>
+                            <a href="https://www.instagram.com" class="redes" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="red bi bi-instagram" ></i>
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="https://www.facebook.com" class="redes" target="_blank" rel="noopener noreferrer">
-                                <h3><i class="bi bi-facebook"></i></h3>
+                            <a href="https://www.facebook.com" class="redes" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="red bi bi-facebook" ></i>
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="https://www.x.com" class="redes" target="_blank" rel="noopener noreferrer">
-                                <h3><i class="bi bi-twitter"></i></h3>
+                            <a href="https://www.x.com" class="redes" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="red bi bi-twitter" ></i>
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="https://www.tiktok.com" class="redes" target="_blank" rel="noopener noreferrer">
-                                <h3><i class="bi bi-tiktok"></i></h3>
+                            <a href="https://www.tiktok.com" class="redes" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <i class="red bi bi-tiktok" ></i>
                             </a>
                         </div>
                     </div>
